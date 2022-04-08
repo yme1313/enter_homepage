@@ -1,4 +1,4 @@
-*{ padding: 0; margin: 0; text-decoration: none; color: #000; }
+*{ padding: 0; margin: 0; text-decoration: none; color: #000; max-height: 100000px; }
 ul{
     color: black;
     list-style: none;
@@ -76,7 +76,6 @@ a{
   display: none;
 }
 #boddy{
-  background-color: wheat;
   padding: 0 4rem 0 6rem;
   min-height: 55rem;
 }
@@ -85,31 +84,35 @@ a{
   justify-content: space-between;
 }
 .left-menu{
-  margin-top: 3rem;
-  background-color: red;
+  margin-top: 2rem;
+  border: 1px solid black;
+  box-sizing: border-box;
   width: 40vw;
-  height: 80vh;
+  height: 650px;
 }
 .right-menu{
-  margin-top: 3rem;
-  background-color: blue;
-  width: 45vw;
-  height: 80vh;
+  margin-top: 2rem;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 650px;
 }
 .left-menu-sub1{
-  background-color: yellow;
+  border: 1px solid black;
+  box-sizing: border-box;
   width: 40vw;
-  height: 12vh;
+  height: 80px;
 }
 .left-menu-sub2{
-  background-color: green;
+  border: 1px solid black;
+  box-sizing: border-box;
   width: 40vw;
-  height: 12vh;
+  height: 65px;
 }
 .left-menu-sub3{
   background-color: white;
-  width: 22vw;
-  height: 33vh;
+  width: 300px;
+  height: 250px;
 }
 .left-menu-sub3-1{
   margin-top: 0.5%;
@@ -121,16 +124,17 @@ a{
 }
 .second-menu{
   background-color: goldenrod;
-  height: 50vh;
-  margin-top: 2vh;
+  height: 330px;
+  margin-top: 1vh;
 }
 #footer{
-  height: 36vh;
-}
-.footer-first-menu{
-  padding: 0 4rem 0 6rem;
-  height: 29vh;
-  background-color: powderblue;
+  height: 34vh;
+}.footer-first-menu, .res-footer-first-menu{
+  padding: 0 2rem 0 6rem;
+  height: 250px;
+  background-color: rgb(233, 240, 241);
+  display: flex;
+  justify-content: space-around;
 }
 .footer-second-menu{
   display: flex;
@@ -143,7 +147,59 @@ a{
   text-align: center;
   margin-right: 2vw;
 }
-@media screen and (max-width : 721px) {
+.footer-first-menu-sub {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 4vw;
+  padding-bottom : 3vh;
+}
+#bold{
+  font-weight: bold;
+  color: tomato;
+}
+.ssub1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.ssub2{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.ssub3{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.fa-phone{
+  color: crimson;
+}
+.sssub1{
+  font-size: 25px;
+  margin-bottom: 2vh;
+}
+.res-footer-first-menu{
+    display: none;
+}
+.go-top {
+	display:none;
+	position:fixed;
+	bottom:5vh;
+	right:20px;
+	z-index:999;
+	cursor:pointer;
+	font-size : 25px;
+  text-decoration: underline;
+  color: crimson;
+}
+#bg-img{
+  width: 100%;
+  left: -0.5%;
+  height: 1100px;
+  position: absolute;
+  z-index: -50;
+  opacity: 0.4;
+}
+@media screen and (max-width : 880px) {
   .top{
     display : none;
   }
@@ -162,7 +218,7 @@ a{
   }
   #trigger{
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     right : 1rem;
     font-size: 2rem;
   }
@@ -203,5 +259,20 @@ a{
   .res-sub-menu{
     display: block;
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width : 1280px) {
+  .footer-first-menu{
+    display: none;
+  }
+  .res-footer-first-menu{
+    display: block;
+    height: 350px;
+  }
+  .include{
+    display: flex;
+  }
+  .footer-first-menu-sub{
+    padding-top: 1vh;
   }
 }
