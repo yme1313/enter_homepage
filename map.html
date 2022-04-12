@@ -15,7 +15,11 @@
 .map-img{
   width: 100%;
   height: 300px;
+  line-height: 300px;
   border: 1px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 5rem;
 }
 .map-body{
   margin-top: 1rem;
@@ -44,11 +48,20 @@
   justify-content: center;
   align-items: center;
 }
+.map-img #winter{
+  width: 13%;
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  display: none;
+} 
   </style>
 </head>
 <body>
     <div class="map-img">
-    
+        오시는 길
+        <img id="winter" src="/img/winter.gif" alt="">
+      </div>
     </div>
     <div class="container map-body">
       <div class="map-intro">
@@ -64,6 +77,11 @@
       <div class="info1 flex">FAX : 043-273-1033</div>
     </div>
 <script>
+  $(function(){
+    $(document).ready(function(){
+      $('#winter').fadeIn(3000);
+    })
+  })
   var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
   var options = { //지도를 생성할 때 필요한 기본 옵션
     center: new kakao.maps.LatLng(36.71392566846256, 127.4311188674485), //지도의 중심좌표.

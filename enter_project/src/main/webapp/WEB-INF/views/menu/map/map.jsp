@@ -9,11 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/map.css">
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0fd4051fc179828ce6ba535313d32756"></script>
-	<title>오시는 길</title>
+	<title>엔터정보기술</title>
 </head>
 <body>
     <div class="map-img">
-    
+      	오시는 길
+      	<img id="winter" src="<%=request.getContextPath()%>/resources/img/winter.gif">
     </div>
     <div class="container map-body">
       <div class="map-intro">
@@ -29,6 +30,11 @@
       <div class="info1 flex">FAX : 043-273-1033</div>
     </div>
 <script>
+	$(function(){
+	    $(document).ready(function(){
+	      $('#winter').fadeIn(3000);
+	    })
+	  })
   var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
   var options = { //지도를 생성할 때 필요한 기본 옵션
     center: new kakao.maps.LatLng(36.71392566846256, 127.4311188674485), //지도의 중심좌표.

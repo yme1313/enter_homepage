@@ -27,60 +27,60 @@
       <a href="#">
         <div class="sub-menu s3">인재채용</div>
       </a>
-      <a href="#">
+      <a href="<%=request.getContextPath()%>/news">
         <div class="sub-menu s4">뉴스레터</div>
       </a>
       <a href="<%=request.getContextPath()%>/map">
         <div class="sub-menu s5">오시는 길</div>
       </a>
     </ul>
+	 <div class="dropdown">
+	   <div class="dropmenu">
+	       <div class="sub-menu">
+	         <a href="#">
+	           <div class="sub-menu-list">인사말</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">연혁</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">인증</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">주요실적</div>
+	         </a>
+	       </div>
+	       <div class="sub-menu">
+	         <a href="#">
+	           <div class="sub-menu-list">IT서비스</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">주요사례</div>
+	         </a>
+	       </div>
+	       <div class="sub-menu">
+	         <a href="#">
+	           <div class="sub-menu-list">인사제도</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">채용절차</div>
+	         </a>
+	         <a href="#">
+	           <div class="sub-menu-list">채용정보</div>
+	         </a>
+	       </div>
+	       <div class="sub-menu">
+	         <a href="<%=request.getContextPath()%>/news">
+	           <div class="sub-menu-list">사회공헌</div>
+	         </a>
+	         <a href="<%=request.getContextPath()%>/it">
+	           <div class="sub-menu-list">IT소식</div>
+	         </a>
+	       </div>
+	       <div class="sub-menu"></div>
+	   </div>
   </div>
-  <div class="dropdown">
-    <div class="dropmenu">
-        <div class="sub-menu">
-          <a href="#">
-            <div class="sub-menu-list">인사말</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">연혁</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">인증</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">주요실적</div>
-          </a>
-        </div>
-        <div class="sub-menu">
-          <a href="#">
-            <div class="sub-menu-list">IT서비스</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">주요사례</div>
-          </a>
-        </div>
-        <div class="sub-menu">
-          <a href="#">
-            <div class="sub-menu-list">인사제도</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">채용절차</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">채용정보</div>
-          </a>
-        </div>
-        <div class="sub-menu">
-          <a href="#">
-            <div class="sub-menu-list">사회공헌</div>
-          </a>
-          <a href="#">
-            <div class="sub-menu-list">IT소식</div>
-          </a>
-        </div>
-        <div class="sub-menu"></div>
     </div>
-  </div>
  <!-- 반응형 nav -->
   <div class="res-menu">
     <div class="res-top">
@@ -129,9 +129,12 @@
     </div>
   </div>
 <script type="text/javascript">
-  $(function(){
+$(function(){
     $('.sub-menu').hover(function(){
-      $('.dropdown').toggle();
+      $('.dropdown').slideDown(300);
+    })
+    $('.top').mouseleave(function(){
+      $('.dropdown').slideUp(300);
     })
     menu_hover(s1); 
     menu_hover(s2);

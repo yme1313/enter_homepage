@@ -1,8 +1,18 @@
 .map-img{
   width: 100%;
-  height: 300px;
-  border-bottom: 1px solid blue;
+  height: 280px;
+  line-height: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 10vw;
 }
+.map-img #winter{
+  width: 18%;
+  position: absolute;
+  top: 5.5rem;
+  right: 12rem;
+  display: none;
+} 
 .map-body{
   margin-top: 1rem;
 }

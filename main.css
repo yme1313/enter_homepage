@@ -6,17 +6,19 @@ ul{
 a{ 
   color:black;
 }
+a:hover{
+  text-decoration: none;
+}
 .top{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
     padding-left : 4rem;
-    padding-right: 6rem;
     position: relative;
 }
 .menu-bar{
     display: flex;
     height: 4rem;
+    margin-right: 4vw;
 }
 .home-img{
     padding-left: 2rem;
@@ -40,12 +42,15 @@ a{
   color: black;
 }
 .dropdown{
-  height: 300px;
+  height: 280px;
   width: 100%;
   box-sizing: border-box;
   background-color: white;
-  border: 1px solid red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
   display: none;
+  top: 5rem;
+  right: 0;
   position: absolute;
   z-index: 999;
 }
@@ -54,7 +59,7 @@ a{
   height: 100%;
   justify-content: flex-end;
   text-align: center;
-  padding-right : 6rem;
+  margin-right: 4vw;
 }
 .dropmenu .sub-menu{
   height: 100%;
@@ -77,55 +82,62 @@ a{
 }
 #boddy{
   padding: 0 4rem 0 6rem;
-  min-height: 55rem;
+  min-height: 1300px;
 }
 .first-menu{
   display: flex;
   justify-content: space-between;
 }
 .left-menu{
-  margin-top: 2rem;
-  border: 1px solid black;
-  box-sizing: border-box;
+  margin-top: 4rem;
   width: 40vw;
   height: 650px;
 }
 .right-menu{
-  margin-top: 2rem;
-  border: 1px solid black;
-  box-sizing: border-box;
+  margin-top: 4rem;
   width: 50vw;
   height: 650px;
 }
 .left-menu-sub1{
-  border: 1px solid black;
-  box-sizing: border-box;
   width: 40vw;
   height: 80px;
 }
+.left-memu-sub1-title{
+  font-size: 20px;
+}
+.left-memu-sub1-sub-title{
+  font-size: 50px;
+  font-weight: bold;
+}
 .left-menu-sub2{
-  border: 1px solid black;
-  box-sizing: border-box;
+  margin-top: 3rem;
   width: 40vw;
   height: 65px;
 }
 .left-menu-sub3{
-  background-color: white;
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 450px;
 }
 .left-menu-sub3-1{
-  margin-top: 0.5%;
-  width: 48%;
-  height: 48%;
-  border : 1px solid red;
-  box-sizing: border-box;
+  margin: 1rem;
+  width: 42%;
+  height: 42%;
+  background-color: #f2f2f2;
   display: inline-block;
 }
 .second-menu{
-  background-color: goldenrod;
   height: 330px;
-  margin-top: 1vh;
+  margin-top: 10rem;
+  display: flex;
+}
+.second-menu-box{
+  width: 50%;
+  display: none;
+}
+#second-menu-img{
+  height: 330px;
+  margin-top: 2rem;
+  margin-left: 10rem;
 }
 #footer{
   height: 34vh;
@@ -170,6 +182,9 @@ a{
   margin-top: 20px;
   font-size: 30px;
 }
+.sub1{
+  padding-top: 3vh;
+}
 .fa-phone{
   color: crimson;
 }
@@ -193,11 +208,100 @@ a{
 }
 #bg-img{
   width: 100%;
-  left: -0.5%;
-  height: 1100px;
+  left: 0%;
+  height: 1300px;
   position: absolute;
   z-index: -50;
-  opacity: 0.4;
+  opacity: 0.1;
+}
+#right-img{
+  width: 100%;
+}
+.left-img{
+  width: 60%;
+  margin-top: 2rem;
+}
+.left-menu-sub3-1-mini{
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  width: 90%;
+  height: 90%;
+  border: 1px solid white;
+}
+.left-menu-sub3-text1{
+  text-align: center;
+  width: 5.5rem;
+  position: absolute;
+  top: 24rem;
+  left: 13rem;
+}
+.left-menu-sub3-text2{
+  text-align: center;
+  width: 5.5rem;
+  position: absolute;
+  top: 24rem;
+  left: 28.5rem;
+}
+.left-menu-sub3-text3{
+  text-align: center;
+  width: 5.5rem;
+  position: absolute;
+  top: 38rem;
+  left: 13rem;
+}
+.left-menu-sub3-text4{
+  text-align: center;
+  width: 5.5rem;
+  position: absolute;
+  top: 38rem;
+  left: 28.5rem;
+}
+.font-size-10{
+  margin-top: 1rem;
+  font-size: 10.5px;
+  color: gray;
+  text-align: left;
+}
+.second-menu-box:nth-child(1){
+  padding: 3rem;
+}
+.title{
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub-title{
+  margin-top: 1rem;
+  font-size: 25px;
+}
+.content{
+  margin-top: 2rem;
+}
+.more{
+  width: 150px;
+  height: 60px;
+  margin-top: 2rem;
+  line-height: 60px;
+  text-align: center;
+  color: cornflowerblue;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid cornflowerblue;
+  
+}
+.more:hover{
+  background: cornflowerblue;
+	color: white;
+}
+
+
+
+.blue{
+  color: blue;
+  font-weight: bold;
 }
 @media screen and (max-width : 880px) {
   .top{

@@ -37,6 +37,24 @@
 	    </beans:property>
 	</beans:bean>
 	
+	<!-- 인터셉터 설정 -->
+	<!-- 로그인 처리 -->
+	<beans:bean id="loginInterceptor" 
+		class="kr.green.shop.interceptor.LoginInterceptor"></beans:bean>
+	<!-- 자동 로그인 처리 -->
+	<beans:bean id="autoLoginInterceptor" 
+		class="kr.green.shop.interceptor.AutoLoginInterceptor"></beans:bean>
+		<interceptors>
+			<interceptor>
+				<mapping path="/admin/login"/>
+				<beans:ref bean="loginInterceptor"/>
+			</interceptor>
+			<interceptor>
+				<mapping path="/**/"/>
+				<beans:ref bean="autoLoginInterceptor"/>
+			</interceptor>
+		</interceptors>
+		
 	<!-- 파일 업로드 기능 -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 	    <!-- 업로드 최대 크기 10Mb -->

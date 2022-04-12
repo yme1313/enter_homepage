@@ -1,0 +1,78 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+.container{
+  width : 100%;
+  height : 600px;
+}
+.login-box {
+  position : absolute;
+  width:350px;
+  height:400px;
+  padding: 30px, 20px;
+  background-color:#FFFFFF;
+  text-align:center;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+.login-box h2{
+  text-align: center;
+  margin: 30px;
+}
+.login-id{
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+.login-pw{
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+.auto-login{
+	float : left; margin-left: 30px;
+}
+.id {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+.pw {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+.login-btn {
+  position:relative;
+  left:40%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  width:80%;
+  height:40px;
+  background: linear-gradient(125deg,#81ecec,#636e72,#81ecec);
+  background-position: left;
+  background-size: 200%;
+  color:white;
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+  display:inline;
+  margin-top: 1rem;
+}
+.login-btn:hover {
+  background-position: right;
+  color: white;
+}

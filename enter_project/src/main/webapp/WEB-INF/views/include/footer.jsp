@@ -73,8 +73,16 @@
         </div>
       </div>
     <div class="footer-second-menu">
-	   <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
-      <div class="copyright">COPYRIGHT(C) 2020 ENTERITECH ALL RIGHT RESERVED</div>
+      <a class="admin-login-btn" href="<%=request.getContextPath()%>/login">
+        <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
+      </a>
+      <c:if test="${user == null}">
+      	<div class="copyright">COPYRIGHT(C) 2020 ENTERITECH ALL RIGHT RESERVED</div>  
+      </c:if>     
+       <c:if test="${user != null}">
+      	<div class="copyright">${user.ad_id} 님 접속 중입니다. </div>  
+      </c:if>
+		
     </div>
     <span class="go-top">
 			TOP ↑
