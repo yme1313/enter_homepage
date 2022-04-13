@@ -10,28 +10,235 @@
 	<title>엔터정보기술</title>
 </head>
 <body>
- <div id="boddy">
-  <img src="<%=request.getContextPath()%>/resources/img/메인 배경.jpg" id="bg-img">
+<div id="boddy">
+    <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="bg-img">
     <div class="first-menu">
       <div class="left-menu">
         <div class="left-menu-sub1">
-        	회사 큰 설명
+          <div class="left-memu-sub1-title">전문화된 기술력과 노하우를 기반으로!</div>
+          <div class="left-memu-sub1-sub-title">IT Leading Company
+          </div>
         </div>
         <div class="left-menu-sub2">
-          	회사 작은 상세 설명
+          <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 최고의 서비스만족을 제공합니다.
         </div>
         <div class="left-menu-sub3">
-          <div class="left-menu-sub3-1">경영철학</div>
-          <div class="left-menu-sub3-1">인사제도</div>
-          <div class="left-menu-sub3-1">뉴스레터</div>
-          <div class="left-menu-sub3-1">오시는 길</div>
+          <a href="#">
+            <div class="left-menu-sub3-1 min1">
+              <div class="left-menu-sub3-1-mini">
+                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                <div class="left-menu-sub3-text1">
+                  경영철학<br>
+                  <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="left-menu-sub3-1 min2">
+              <div class="left-menu-sub3-1-mini">
+                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                <div class="left-menu-sub3-text2">
+                  인재채용<br>
+                  <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
+                </div>
+              </div>
+            </div>
+          </a>
+            <a href="<%=request.getContextPath()%>/news">
+            <div class="left-menu-sub3-1 min3">
+              <div class="left-menu-sub3-1-mini">
+                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                <div class="left-menu-sub3-text3">
+                  뉴스레터<br>
+                  <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다. </div> 
+                </div>
+              </div>
+            </div>
+          </a>
+            <a href="<%=request.getContextPath()%>/map">
+            <div class="left-menu-sub3-1 min4">
+              <div class="left-menu-sub3-1-mini">
+                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                <div class="left-menu-sub3-text4">
+                  오시는길 <br>
+                  <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <div class="right-menu"> 
-        <img id="karina" src="<%=request.getContextPath()%>/resources/img/karina.gif">
+        <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
       </div>
     </div>
-    <div class="second-menu">비즈니스 이미지</div>
+    <div class="res-sub-first-menu">
+        <div class="left-menu">
+            <div class="left-memu-sub1-title">전문화된 기술력과 노하우를 기반으로!</div>
+            <div class="left-memu-sub1-sub-title">IT Leading Company
+          </div>
+          <div class="left-menu-sub2">
+            <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 최고의 서비스만족을 제공합니다.
+          </div>
+          <div class="left-menu-sub3">
+            <a href="#">
+              <div class="left-menu-sub3-1 min1">
+                <div class="left-menu-sub3-1-mini">
+                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                  <div class="left-menu-sub3-text1">경영철학
+                    <br>
+                    <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="left-menu-sub3-1 min2">
+                <div class="left-menu-sub3-1-mini">
+                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                  <div class="left-menu-sub3-text2">인재채용
+                    <br>
+                    <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="<%=request.getContextPath()%>/news">
+              <div class="left-menu-sub3-1 min3">
+                <div class="left-menu-sub3-1-mini">
+                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                  <div class="left-menu-sub3-text3">뉴스레터
+                    <br>
+                    <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다.</div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="<%=request.getContextPath()%>/map">
+              <div class="left-menu-sub3-1 min4">
+                <div class="left-menu-sub3-1-mini">
+                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                  <div class="left-menu-sub3-text4">오시는길
+                     <br>
+                    <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right-menu"> 
+          <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
+        </div>
+      </div>
+    <div class="second-menu">
+      <div class="second-menu-box">
+        <div class="second-menu-box-sub title">IT Consulting</div>
+        <div class="second-menu-box-sub sub-title">비즈니스 목표달성, 업무성과 달성에 <span class="blue">최적화된 IT서비스</span>를 제공합니다.</div>
+        <div class="second-menu-box-sub content">이를 통해 비용 효과적인 운영이 되도록 운영조직, 운영관리 프로세스, 
+          운영관리 시스템들의 운영체계를 정립하는 접근방법을 제시합니다.</div>
+        <a href="#">
+          <div class="second-menu-box-sub more">More View →</div>
+        </a>
+      </div>
+      <div class="second-menu-box">
+        <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
+      </div>
+    </div>
   </div>
+  <!-- 반응형 body -->
+ <div id="res-body">
+   <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" alt="" id="bg-img">
+   <div class="res-sub-first-menu">
+       <div class="left-menu">
+           <div class="left-memu-sub1-title">전문화된 기술력과 노하우를 기반으로!</div>
+           <div class="left-memu-sub1-sub-title">IT Leading <br>Company
+         </div>
+         <div class="left-menu-sub2">
+           <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 <br>관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 <br>최고의 서비스만족을 제공합니다.
+         </div>
+         <div class="left-menu-sub3">
+           <a href="#">
+             <div class="left-menu-sub3-1 min1">
+               <div class="left-menu-sub3-1-mini">
+                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                 <div class="left-menu-sub3-text1">경영철학
+                   <br>
+                   <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
+                 </div>
+               </div>
+             </div>
+           </a>
+           <a href="#">
+             <div class="left-menu-sub3-1 min2">
+               <div class="left-menu-sub3-1-mini">
+                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                 <div class="left-menu-sub3-text2">인재채용
+                   <br>
+                   <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
+                 </div>
+               </div>
+             </div>
+           </a>
+            <a href="<%=request.getContextPath()%>/news">
+             <div class="left-menu-sub3-1 min3">
+               <div class="left-menu-sub3-1-mini">
+                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                 <div class="left-menu-sub3-text3">뉴스레터
+                   <br>
+                   <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다.</div> 
+                 </div>
+               </div>
+             </div>
+           </a>
+            <a href="<%=request.getContextPath()%>/map">
+             <div class="left-menu-sub3-1 min4">
+               <div class="left-menu-sub3-1-mini">
+                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                 <div class="left-menu-sub3-text4">오시는길
+                    <br>
+                   <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
+                 </div>
+               </div>
+             </div>
+           </a>
+         </div>
+       </div>
+       <div class="right-menu"> 
+         <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
+       </div>
+     </div>
+     <div class="second-menu">
+       <div class="second-menu-box">
+         <div class="second-menu-box-sub title">IT Consulting</div>
+         <div class="second-menu-box-sub sub-title">비즈니스 목표달성, 업무성과 달성에 <span class="blue">최적화된 IT서비스</span>를 제공합니다.</div>
+         <div class="second-menu-box-sub content">이를 통해 비용 효과적인 운영이 되도록 운영조직, 운영관리 프로세스, 
+           운영관리 시스템들의 운영체계를 정립하는 접근방법을 제시합니다.</div>
+         <a href="#">
+           <div class="second-menu-box-sub more">More View →</div>
+         </a>
+       </div>
+       <div class="second-menu-box">
+         <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
+       </div>
+     </div>
+  </div>  
+<script type="text/javascript">
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 200){
+      $('.second-menu-box').fadeIn(1000);
+    }
+    if ($(this).scrollTop() > 500){
+      $('.go-top').show()
+    } else{
+      $('.go-top').hide();
+    }
+  });
+  $('.go-top').click(function(){
+    $('html, body').animate({scrollTop:0},500);
+    return false;
+  });
+</script>
 </body>
 </html>

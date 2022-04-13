@@ -6,10 +6,13 @@ ul{
 a{ 
   color:black;
 }
+a:hover{
+  text-decoration: none;
+}
 .top{
     display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    padding-left : 4rem;
     position: relative;
 }
 .menu-bar{
@@ -18,9 +21,8 @@ a{
     margin-right: 4vw;
 }
 .home-img{
-	position : absolute;
-	top : 10px;
-	left : 5.5vw;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
 }
 .sub-menu{
     width: 7.5rem;
@@ -45,6 +47,7 @@ a{
   box-sizing: border-box;
   background-color: white;
   border-top: 1px solid red;
+  border-bottom: 1px solid red;
   display: none;
   top: 5rem;
   right: 0;
@@ -56,7 +59,7 @@ a{
   height: 100%;
   justify-content: flex-end;
   text-align: center;
-  margin-right : 4vw;
+  margin-right: 4vw;
 }
 .dropmenu .sub-menu{
   height: 100%;
@@ -79,58 +82,62 @@ a{
 }
 #boddy{
   padding: 0 4rem 0 6rem;
-  min-height: 1000px;
+  min-height: 1300px;
 }
 .first-menu{
   display: flex;
   justify-content: space-between;
 }
 .left-menu{
-  margin-top: 2rem;
-  border: 1px solid black;
-  box-sizing: border-box;
+  margin-top: 4rem;
   width: 40vw;
   height: 650px;
 }
 .right-menu{
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 50vw;
   height: 650px;
 }
-#karina{
-  width: 100%;
-  height: 100%;
-}
 .left-menu-sub1{
-  border: 1px solid black;
-  box-sizing: border-box;
   width: 40vw;
   height: 80px;
 }
+.left-memu-sub1-title{
+  font-size: 20px;
+}
+.left-memu-sub1-sub-title{
+  font-size: 50px;
+  font-weight: bold;
+}
 .left-menu-sub2{
-  border: 1px solid black;
-  box-sizing: border-box;
+  margin-top: 3rem;
   width: 40vw;
   height: 65px;
 }
 .left-menu-sub3{
-  background-color: white;
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 450px;
 }
 .left-menu-sub3-1{
-  margin-top: 0.5%;
-  width: 48%;
-  height: 48%;
-  border : 1px solid red;
-  box-sizing: border-box;
+  margin: 1rem;
+  width: 42%;
+  height: 42%;
+  background-color: #f2f2f2;
   display: inline-block;
 }
 .second-menu{
-  border: 1px solid black;
-  box-sizing: border-box;
   height: 330px;
-  margin-top: 1vh;
+  margin-top: 10rem;
+  display: flex;
+}
+.second-menu-box{
+  width: 50%;
+  display: none;
+}
+#second-menu-img{
+  height: 330px;
+  margin-top: 2rem;
+  margin-left: 10rem;
 }
 #footer{
   height: 34vh;
@@ -175,6 +182,9 @@ a{
   margin-top: 20px;
   font-size: 30px;
 }
+.sub1{
+  padding-top: 3vh;
+}
 .fa-phone{
   color: crimson;
 }
@@ -198,17 +208,168 @@ a{
 }
 #bg-img{
   width: 100%;
-  left: -0.5%;
-  height: 1100px;
+  left: 0%;
+  height: 1300px;
   position: absolute;
   z-index: -50;
-  opacity: 0.4;
+  opacity: 0.1;
 }
-.login-stats{
-  height: 50px;
-  line-height: 50px;
+#right-img{
+  width: 100%;
+  height: 100%;
 }
-@media screen and (max-width : 880px) {
+.left-img{
+  width: 60%;
+  margin-top: 2rem;
+}
+.left-menu-sub3-1-mini{
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  width: 90%;
+  height: 90%;
+  border: 1px solid white;
+  display: flex;
+}
+.left-menu-sub3-text1, .left-menu-sub3-text2, .left-menu-sub3-text3, .left-menu-sub3-text4{
+  margin-top: 1rem;
+  text-align: center;
+  width: 6rem;
+}
+.font-size-10{
+  margin-top: 1rem;
+  font-size: 10.5px;
+  color: gray;
+  text-align: left;
+}
+.second-menu-box:nth-child(1){
+  padding: 3rem;
+}
+.title{
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub-title{
+  margin-top: 1rem;
+  font-size: 25px;
+}
+.content{
+  margin-top: 2rem;
+}
+.more{
+  width: 150px;
+  height: 60px;
+  margin-top: 2rem;
+  line-height: 60px;
+  text-align: center;
+  color: cornflowerblue;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid cornflowerblue;
+  
+}
+.more:hover{
+  background: cornflowerblue;
+	color: white;
+}
+.res-sub-first-menu{
+  display: none;
+}
+#res-body{
+  display:none;
+}
+#res-footer{
+  display: none;
+}
+
+
+.blue{
+  color: blue;
+  font-weight: bold;
+}
+@media screen and (max-width : 1280px) {
+  .first-menu{
+    display: none;
+  }
+  .res-sub-first-menu{
+    display: inline-block;
+    padding: 0;
+  }
+  #boddy{
+    min-height: 1800px;
+  }
+  #bg-img{
+    height: 1800px;
+  }
+  .left-menu{
+    margin-top: 4rem;
+    width: 100%;
+    height: 430px;
+  }
+  .right-menu{
+    margin-top: 4rem;
+    width: 50vw;
+    height: 650px;
+    padding: 0;
+  }
+  .left-menu-sub1{
+    height: 80px;
+    width: 100%;
+  }
+  .left-memu-sub1-title{
+    font-size: 20px;
+  }
+  .left-memu-sub1-sub-title{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .left-menu-sub2{
+    margin-top: 3rem;
+    width: 100%;
+    height: 65px;
+  }
+  .left-menu-sub3{
+    width: 100%;
+    height: 210px;
+  }
+  .left-menu-sub3-1{
+    margin: 1rem;
+    width: 220px;
+    height: 200px;
+    background-color: #f2f2f2;
+    display: inline-block;
+  }
+  #right-img{
+    margin-left: 1rem;
+    width: 150%;
+    height: 100%;
+  }
+  .footer-first-menu{
+    display: none;
+  }
+  .res-footer-first-menu{
+    display: block;
+    height: 350px;
+  }
+  .include{
+    display: flex;
+  }
+  .footer-first-menu-sub{
+    padding-top: 1vh;
+  }
+}
+
+@media screen and (max-width : 945px) {
+ul{
+  margin-bottom: 0;
+  padding:0;
+}
+  #bg-img{
+    height: 3000px;
+  }
   .top{
     display : none;
   }
@@ -227,9 +388,10 @@ a{
   }
   #trigger{
     position: absolute;
-    top: 0.4rem;
+    top: 8px;
     right : 1rem;
     font-size: 2rem;
+    color: black;
   }
   .res-dropdown {
       height : 40px;
@@ -239,7 +401,9 @@ a{
     height: auto;
     font-size : 1.2em;
     font-weight: bold;
-    position: relative;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
   }
   .res-dropdown .drop-ul {
     display: none;
@@ -269,19 +433,144 @@ a{
     display: block;
     font-size: 0.8rem;
   }
-}
-@media screen and (max-width : 1280px) {
-  .footer-first-menu{
-    display: none;
+  #res-body{
+    display: inline-block;
+    width: 100%;
+    height: 2400px;
   }
-  .res-footer-first-menu{
-    display: block;
+  .res-sub-first-menu{
+    width: 100%;
+    display: inline-block;
+  }
+  #right-img{
+    margin-left:0;
+    width: 100%;
+    height: 100%;
+  }
+  .left-img{
+    width: 60%;
+    margin-top: 2rem;
+  }
+  .left-menu{
+    margin-top: 1rem;
+    height: 1120px;
+  }
+  .right-menu{
+    width:100%;
+    margin-top: 4rem;
     height: 350px;
   }
-  .include{
+  .left-menu-sub1{
+    height: 80px;
+  }
+  .left-memu-sub1-title{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .left-memu-sub1-sub-title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .left-menu-sub2{
+    margin-top: 1rem;
+    height: 65px;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .left-menu-sub3{
+    height: 450px;
+  }
+  .left-menu-sub3-1{
+    margin: 1rem;
+    width: 90%;
+    height: 42%;
+    background-color: #f2f2f2;
+    display: inline-block;
+  }
+  .left-menu-sub3-1-mini{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
     display: flex;
   }
-  .footer-first-menu-sub{
-    padding-top: 1vh;
+  .left-menu-sub3-text1, .left-menu-sub3-text2, .left-menu-sub3-text3, .left-menu-sub3-text4{
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 6rem;
+  }
+  .font-size-10{
+    margin-top: 1rem;
+    font-size: 10.5px;
+    color: gray;
+    text-align: left;
+  }
+  .second-menu{
+	display : block;
+    height: 330px;
+    margin-top:0;
+  }
+  .second-menu-box{
+    padding:10px;
+    display: none;
+    width : 100%;
+  }
+  #second-menu-img{
+    width: 95%;
+    height: 330px;
+    margin-top: 2rem;
+    margin-left : 0;
+  }
+  #res-footer{
+    display: block;
+    background-color: rgb(233, 240, 241);
+    height : 640px;
+  }
+  .footer-first-menu, .res-footer-first-menu{
+    padding: 0 2rem 0 6rem;
+    height: 250px;
+    background-color: rgb(233, 240, 241);
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-second-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 30px;
+  }
+  .footer-first-menu-sub {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 4vw;
+    padding-bottom : 10px;
+  }
+  .sub1{
+    padding-top: 3vh;
+  }
+  #bold{
+    font-weight: bold;
+    color: tomato;
+  }
+  .ssub1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .ssub2{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .ssub3{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .fa-phone{
+    color: crimson;
+  }
+  .sssub1{
+    font-size: 25px;
+    margin-bottom: 2vh;
   }
 }
