@@ -1,5 +1,8 @@
 package kr.green.shop.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,22 +18,29 @@ public class AdminController {
 	private AdminService adminService;
 	
 	@GetMapping("/login")
-	public ModelAndView login(ModelAndView mv) {
+	public ModelAndView loginGet(ModelAndView mv) {
 		mv.addObject("title","엔터정보기술");
 		mv.setViewName("/template/admin/login");
 		return mv;
 	}
 	
-	@PostMapping("/login")
+	@PostMapping("/admin/login")
 	public ModelAndView loginPost(ModelAndView mv, AdminVO user) {
 		AdminVO loginUser = adminService.signin(user);
 		if(loginUser != null) {
 			mv.setViewName("redirect:/");
+			mv.addObject("user", loginUser);
 		} else {
 			mv.setViewName("redirect:/login");
 		}
-		mv.addObject("user", user);
 		return mv;
 	}
-	
+	@GetMapping("logout")
+	public ModelAndView SignoutGet(ModelAndView mv, 
+			HttpServletRequest request,
+			HttpServletResponse response) {
+		adminService.logout(request, response);
+		mv.setViewName("redirect:/");
+		return mv;
+	}
 }

@@ -12,7 +12,7 @@
 </head>
 <body>
  <div class=container>
-  <form class=login-box method="post" action="<%=request.getContextPath()%>/login">
+  <form class=login-box method="post" action="<%=request.getContextPath()%>/admin/login">
       <h2>로그인</h2>
       <div class="login-id">
         <input type="text" class="id form-control" placeholder="ID" name="ad_id">

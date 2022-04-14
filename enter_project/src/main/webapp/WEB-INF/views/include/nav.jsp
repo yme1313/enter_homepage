@@ -16,7 +16,7 @@
     </div>
     <ul class="menu-bar">
       <a href="#">
-        <div class="sub-menu s1">회사소개</div>
+        <div class="sub-menu s1">기업소개</div>
       </a>
       <a href="#">
         <div class="sub-menu s2">사업분야</div>
@@ -24,8 +24,8 @@
       <a href="#">
         <div class="sub-menu s3">인재채용</div>
       </a>
-      <a href="<%=request.getContextPath()%>/news">
-        <div class="sub-menu s4">뉴스레터</div>
+      <a href="<%=request.getContextPath()%>/it">
+        <div class="sub-menu s4">홍보센터</div>
       </a>
       <a href="<%=request.getContextPath()%>/map">
         <div class="sub-menu s5">오시는 길</div>
@@ -35,16 +35,16 @@
 	   <div class="dropmenu">
 	       <div class="sub-menu">
 	         <a href="#">
+	           <div class="sub-menu-list">소개</div>
+	         </a>
+	         <a href="#">
 	           <div class="sub-menu-list">인사말</div>
 	         </a>
 	         <a href="#">
 	           <div class="sub-menu-list">연혁</div>
 	         </a>
 	         <a href="#">
-	           <div class="sub-menu-list">인증</div>
-	         </a>
-	         <a href="#">
-	           <div class="sub-menu-list">주요실적</div>
+	           <div class="sub-menu-list">인증/수상</div>
 	         </a>
 	       </div>
 	       <div class="sub-menu">
@@ -67,11 +67,11 @@
 	         </a>
 	       </div>
 	       <div class="sub-menu">
-	         <a href="<%=request.getContextPath()%>/news">
-	           <div class="sub-menu-list">사회공헌</div>
-	         </a>
 	         <a href="<%=request.getContextPath()%>/it">
 	           <div class="sub-menu-list">IT소식</div>
+	         </a>
+	         <a href="<%=request.getContextPath()%>/news">
+	           <div class="sub-menu-list">뉴스레터</div>
 	         </a>
 	       </div>
 	       <div class="sub-menu"></div>
@@ -89,12 +89,12 @@
     <div class="res-dropdown">
       <ul class="drop-ul">
         <li>
-          <a href="#">회사소개</a>
+          <a href="#">기업소개</a>
           <ul class="res-sub-menu rs1">
+            <li><a href="#">소개</a></li>
             <li><a href="#">인사말</a></li>
             <li><a href="#">연혁</a></li>
-            <li><a href="#">인증</a></li>
-            <li><a href="#">수상</a></li>
+            <li><a href="#">인증/수상</a></li>
           </ul>
         </li>
         <li>
@@ -128,10 +128,10 @@
 <script type="text/javascript">
 $(function(){
     $('.sub-menu').hover(function(){
-      $('.dropdown').slideDown(300);
+      $('.dropdown').stop().slideDown(300);
     })
     $('.top').mouseleave(function(){
-      $('.dropdown').slideUp(300);
+      $('.dropdown').stop().slideUp(300);
     })
     menu_hover(s1); 
     menu_hover(s2);

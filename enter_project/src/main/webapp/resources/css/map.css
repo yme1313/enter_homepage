@@ -5,12 +5,21 @@
   font-size: 40px;
   font-weight: bold;
   padding: 0 10vw;
+  border-bottom : 1px solid #e0e0e0;
+}
+#map_bg_img{
+  width: 100%;
+  left: 0%;
+  height: 280px;
+  position: absolute;
+  z-index: -50;
+  opacity: 0.1;
 }
 .map-img #winter{
-  width: 18%;
+  width: 380px;
   position: absolute;
-  top: 5.5rem;
-  right: 12rem;
+  top: 5rem;
+  right: 120px;
   display: none;
 } 
 .map-body{

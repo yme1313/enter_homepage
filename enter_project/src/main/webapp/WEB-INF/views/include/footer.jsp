@@ -66,6 +66,7 @@
             </div>
             <div class="sssub2">본사 : help@enteritech.com</div>
             <div class="sssub2">영업팀 : help@enteritech.com</div>
+            <div class="sssub2">{test}</div>
           </div>
         </div>
       </div>
@@ -77,13 +78,14 @@
       	<div class="copyright">COPYRIGHT(C) 2020 ENTERITECH ALL RIGHT RESERVED</div>  
       </c:if>     
        <c:if test="${user != null}">
-      	<div class="copyright">${user.ad_id} 님 접속 중입니다. </div>  
+      	<div class="copyright">${user.admin} 님 접속 중입니다
+      		<a id="logout-ntn" class="btn btn-dark" href="<%=request.getContextPath()%>/logout">로그아웃</a>
+      	 </div>  
       </c:if>
-		
     </div>
     <span class="go-top">
 			TOP ↑
-		</span>
+	</span>
   </div>
   <!-- 반응형 footer -->
   <div id="res-footer">

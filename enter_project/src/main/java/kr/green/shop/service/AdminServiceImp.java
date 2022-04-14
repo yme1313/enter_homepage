@@ -2,8 +2,14 @@ package kr.green.shop.service;
 
 import java.util.Date;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.util.WebUtils;
 
 import kr.green.shop.dao.AdminDAO;
 import kr.green.shop.vo.AdminVO;
@@ -48,5 +54,35 @@ public class AdminServiceImp implements AdminService{
 		}
 		return adminDao.getAdminBySession(session_id);
 	}
+
+	@Override
+	public void logout(HttpServletRequest request, HttpServletResponse response) {
+		if(request == null || response == null) {
+			return;
+		}
+		AdminVO user = getAdminByRequest(request);
+		if(user == null) {
+			return;
+		}
+		HttpSession session = request.getSession();
+		session.removeAttribute("user");
+		session.invalidate();
+		Cookie loginCookie = WebUtils.getCookie(request, "loginCookie");
+		if(loginCookie == null) {
+			return;
+		}
+		loginCookie.setPath("/");
+		loginCookie.setMaxAge(0);
+		response.addCookie(loginCookie);
+		keepLogin(user.getAd_id(), "none", new Date());
+	}
+
+	public AdminVO getAdminByRequest(HttpServletRequest request) {
+		if(request == null ) {
+			return null;
+		}
+		return (AdminVO)request.getSession().getAttribute("user");
+	}
+
 	
 }

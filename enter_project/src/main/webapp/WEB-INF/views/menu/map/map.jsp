@@ -4,8 +4,6 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/map.css">
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0fd4051fc179828ce6ba535313d32756"></script>
@@ -13,8 +11,9 @@
 </head>
 <body>
     <div class="map-img">
+        <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="map_bg_img">
       	오시는 길
-      	<img id="winter" src="<%=request.getContextPath()%>/resources/img/winter.gif">
+       <img id="winter" src="<%=request.getContextPath()%>/resources/img/오시는길-페이지.png">
     </div>
     <div class="container map-body">
       <div class="map-intro">

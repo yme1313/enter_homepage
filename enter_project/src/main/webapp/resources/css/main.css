@@ -198,13 +198,16 @@ a:hover{
 .go-top {
 	display:none;
 	position:fixed;
-	bottom:5vh;
+	bottom:7vh;
 	right:20px;
 	z-index:999;
 	cursor:pointer;
 	font-size : 25px;
   text-decoration: underline;
   color: crimson;
+}
+#logout-ntn{
+	margin-left:3px;
 }
 #bg-img{
   width: 100%;

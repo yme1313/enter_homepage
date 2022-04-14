@@ -3,12 +3,19 @@ a:hover{
 }
 .news-img{
   width: 100%;
-  height: 300px;
+  height: 280px;
   line-height: 300px;
-  border: 1px solid black;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  padding: 0 5rem;
+  padding: 0 10vw;
+}
+#news_bg_img{
+  width: 100%;
+  left: 0%;
+  height: 280px;
+  position: absolute;
+  z-index: -50;
+  opacity: 0.1;
 }
 .news-body{
   margin-top: 1rem;
@@ -34,21 +41,22 @@ a:hover{
   align-items: center;
 }
 .news-img #winter{
-  width: 17%;
+  width: 380px;
   position: absolute;
-  top: 8rem;
-  right: 10rem;
+  top: 5rem;
+  right: 120px;
   display: none;
 } 
 .news-submenu{
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
 }
 .news-submenu-title-box{
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
+    border-right : none;
     display: flex;
 }
 .news-submenu-title-box #title{
@@ -56,11 +64,12 @@ a:hover{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border-right: 1px solid black;
+    border-right: 1px solid #e0e0e0;
 }
 .news-submenu-list-box{
     display: flex;
     width: 80%;
+ 	
 }
 .news-submenu-list-box a{
     width: 15%;
@@ -80,4 +89,37 @@ a:hover{
     float: left;
     margin: 1.5rem;
     margin-bottom: 2rem;
+}
+.board-news{
+	margin-bottom : 50px;
+	margin-top : 30px;
+}
+.pagination{
+	margin-bottom : 50px;
+}
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+  background: grey;
+  border-color: grey;
+  color : white;
+}
+.reg-btn{
+	float : right;
+}
+#chk{
+	display : none;
+}
+.bd-title{
+	font-size : 35px;
+	text-align : center;
+	margin : 5px;
+}
+.bd-info{
+	display : flex;
+	justify-content: flex-end;	
+	margin-top : 15px;
 }
