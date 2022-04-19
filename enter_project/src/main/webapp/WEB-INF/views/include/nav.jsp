@@ -21,7 +21,7 @@
       <a href="#">
         <div class="sub-menu s2">사업분야</div>
       </a>
-      <a href="#">
+      <a href="<%=request.getContextPath()%>/psn">
         <div class="sub-menu s3">인재채용</div>
       </a>
       <a href="<%=request.getContextPath()%>/it">
@@ -56,14 +56,11 @@
 	         </a>
 	       </div>
 	       <div class="sub-menu">
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/psn">
 	           <div class="sub-menu-list">인사제도</div>
 	         </a>
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/process">
 	           <div class="sub-menu-list">채용절차</div>
-	         </a>
-	         <a href="#">
-	           <div class="sub-menu-list">채용정보</div>
 	         </a>
 	       </div>
 	       <div class="sub-menu">
@@ -81,7 +78,7 @@
  <!-- 반응형 nav -->
   <div class="res-menu">
     <div class="res-top">
-      <a href="#">
+        <a href="<%=request.getContextPath()%>/">
         <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
       </a>
       <a href="#" id="trigger"><i class="fas fa-bars"></i></a>
@@ -89,7 +86,7 @@
     <div class="res-dropdown">
       <ul class="drop-ul">
         <li>
-          <a href="#">기업소개</a>
+          <div class="ul1">기업소개</div>
           <ul class="res-sub-menu rs1">
             <li><a href="#">소개</a></li>
             <li><a href="#">인사말</a></li>
@@ -98,25 +95,24 @@
           </ul>
         </li>
         <li>
-          <a href="#">사업분야</a>
+          <div class="ul2">사업분야</div>
           <ul class="res-sub-menu rs2">
             <li><a href="#">IT서비스</a></li>
             <li><a href="#">주요사례</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">인재채용</a>
+          <div class="ul3">인재채용</div>
           <ul class="res-sub-menu rs3">
-            <li><a href="#">인사제도</a></li>
-            <li><a href="#">채용절차</a></li>
-            <li><a href="#">채용정보</a></li>
+            <li><a href="<%=request.getContextPath()%>/psn">인사제도</a></li>
+            <li><a href="<%=request.getContextPath()%>/process">채용절차</a></li>
           </ul>
         </li>
-        <li
-          ><a href="#">뉴스레터</a>
+        <li>
+          <div class="ul4">홍보센터</div>
           <ul class="res-sub-menu rs4">
-            <li><a href="#">사회공헌</a></li>
-            <li><a href="#">IT소식</a></li>
+            <li><a href="<%=request.getContextPath()%>/it">IT소식</a></li>
+            <li><a href="<%=request.getContextPath()%>/news">뉴스레터</a></li>
           </ul>
         </li>
         <li>

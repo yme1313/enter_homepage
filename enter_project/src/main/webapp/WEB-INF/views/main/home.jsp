@@ -34,7 +34,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="<%=request.getContextPath()%>/psn">
             <div class="left-menu-sub3-1 min2">
               <div class="left-menu-sub3-1-mini">
                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">

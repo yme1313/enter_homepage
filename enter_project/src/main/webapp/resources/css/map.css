@@ -49,3 +49,42 @@
   justify-content: center;
   align-items: center;
 }
+.res-info1{
+	display : none;
+}
+.res-address{
+	display : none;
+}
+@media screen and (max-width : 945px) {
+	#map{
+	 	width: 550px;
+	 	height: 350px;
+	 	margin:0 auto;
+	}
+
+}
+@media screen and (max-width : 945px) {
+	#map{
+	 	width: 350px;
+	 	height: 250px;
+	 	margin:0 auto;
+	}
+	.map-img{
+		font-size: 25px;
+	}
+	.map-img #winter{
+		width: 250px;
+		position: absolute;
+		top: 7rem;
+		right: 10px;
+		display: none;
+	} 
+	.address{
+		display : none;
+	}
+	.res-address{
+		display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	}
+}

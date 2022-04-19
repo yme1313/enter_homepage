@@ -1,0 +1,120 @@
+a:hover{
+	text-decoration : none;
+}
+.career-img{
+  width: 100%;
+  height: 280px;
+  line-height: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 10vw;
+}
+#career_bg_img{
+  width: 100%;
+  left: 0%;
+  height: 280px;
+  position: absolute;
+  z-index: -50;
+  opacity: 0.1;
+}
+.career-img #winter{
+  width: 380px;
+  position: absolute;
+  top: 5rem;
+  right: 120px;
+  display: none;
+} 
+.career-submenu{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+}
+.career-submenu-title-box{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    border-right : none;
+    display: flex;
+}
+.career-submenu-title-box #title{
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+.career-submenu-list-box{
+    display: flex;
+    width: 80%;
+ 	
+}
+.career-submenu-list-box a{
+    width: 15%;
+}
+.career-submenu-list-box .career-submenu-list{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.career-body{
+  margin-top: 1rem;
+}
+.intro1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.intro2{
+  font-size: 20px;
+  font-style:oblique;
+}
+.career-info{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.res-career-submenu-box{
+	display : none
+}
+.res-career-submenu-title-box{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    line-height: 60px;
+    text-align: center;
+}
+.res-career-submenu-list-box{
+    width: 100%;
+    height: 60px;
+    line-height : 60px;
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-top : none;
+    justify-content: space-around;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width : 945px) {
+	.career-img{
+		font-size: 25px;
+	}
+	.career-img #winter{
+		width: 250px;
+		position: absolute;
+		top: 7rem;
+		right: 10px;
+		display: none;
+	} 
+	.career-submenu-box{
+		display : none;
+	}
+	.res-career-submenu-box{
+		display : block;
+	}
+
+}

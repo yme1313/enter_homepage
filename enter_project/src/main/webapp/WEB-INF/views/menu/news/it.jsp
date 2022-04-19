@@ -28,8 +28,20 @@
                </a>
            </div>
        </div>
-
    </div>
+   <!-- 반응형 중간 메뉴 -->   
+   <div class="res-news-submenu-box">
+     <div class="res-news-submenu-title-box">홍보센터</div>
+     <div class="res-news-submenu-list-box">
+         <a href="<%=request.getContextPath()%>/it">
+         	<div class="news-submenu-list">IT소식</div>
+         </a>
+         <a href="<%=request.getContextPath()%>/news">
+         	<div class="news-submenu-list">뉴스레터</div>
+         </a>
+     </div>
+   </div>
+   
    <div class="container news-body">
      <div class="news-intro">
        <div class="intro1 flex">IT소식</div>
@@ -41,8 +53,8 @@
        <br><br>
      </div>
    </div>
-	<div class="container" style="height : 1100px">
-		<div class="item" style="height : 1000px;">
+	<div class="container" style="height : 1400px">
+		<div class="item" style="height : 1320px;">
 			<c:forEach items="${list}" var="board">
 			<a href="<%=request.getContextPath()%>/it/detail?num=${board.bd_num}">
 				<div class="board-img">

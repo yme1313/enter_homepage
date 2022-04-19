@@ -26,11 +26,13 @@ public class MenuController {
 	private BoardService boardService;
 	private AdminService adminService;
 
+	//오시는 길
 	@GetMapping("/map")
 	public ModelAndView getMap(ModelAndView mv) {
 		mv.setViewName("/template/menu/map/map");
 		return mv;
 	}
+	//홍보센터
 	@GetMapping("/news")
 	public ModelAndView getNews(ModelAndView mv, Criteria cri) {
 		cri.setBd_type("news");
@@ -91,11 +93,10 @@ public class MenuController {
 		mv.setViewName("redirect:/news");
 		return mv;
 	}
-	
 	@GetMapping("/it")
 	public ModelAndView getIt(ModelAndView mv, Criteria cri) {
 		cri.setBd_type("it");
-		cri.setPerPageNum(9);
+		cri.setPerPageNum(12);
 		ArrayList <BoardVO> list = boardService.getItBoardList(cri);
 		int totalCount = boardService.getTotalCount(cri);
 		PageMaker pm = new PageMaker(totalCount, 10, cri);
@@ -154,6 +155,17 @@ public class MenuController {
 		AdminVO admin = adminService.getAdminByRequest(request);
 		boardService.deleteItBoard(num, admin);
 		mv.setViewName("redirect:/it");
+		return mv;
+	}
+	//인재채용
+	@GetMapping("/psn")
+	public ModelAndView getPsn(ModelAndView mv) {
+		mv.setViewName("/template/menu/career/psn");
+		return mv;
+	}
+	@GetMapping("/process")
+	public ModelAndView getProcess(ModelAndView mv) {
+		mv.setViewName("/template/menu/career/process");
 		return mv;
 	}
 }

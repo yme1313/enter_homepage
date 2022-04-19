@@ -412,6 +412,10 @@ ul{
     display: none;
     height: auto;
   }
+  .ul1, .ul2, .ul3, .ul4{
+  	height : 51px;
+  	line-height : 51px;
+  }
   .res-dropdown .drop-ul li {
     display: block;
     width: 100%;

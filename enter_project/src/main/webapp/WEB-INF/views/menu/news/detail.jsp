@@ -10,8 +10,14 @@
 </head>
 <body>
    <div class="news-img">
-       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
- 		뉴스레터
+	   <c:if test="${board.bd_type == 'news'}">
+	       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
+	 		뉴스레터
+	 	</c:if>	
+	   <c:if test="${board.bd_type == 'it'}">
+	       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
+	 		IT소식
+	 	</c:if>	
        <img id="winter" src="<%=request.getContextPath()%>/resources/img/홍보센터-페이지.png">
    </div>
    <div class="news-submenu-box">

@@ -24,7 +24,9 @@
     </div>
     <div id="map"></div>
     <div class="map-info">
-      <div class="info1 flex">주소 : 충청북도 청주시 청원구 오창읍 중심상업로 32-13, 엔젤프리존 604, 605호</div>
+      <div class="info1 flex address">주소 : 충청북도 청주시 청원구 오창읍 중심상업로 32-13, 엔젤프리존 604, 605호</div>
+      <div class="info1 res-address">충청북도 청주시 청원구 오창읍</div>
+      <div class="info1 res-address">중심상업로 32-13, 엔젤프리존 604, 605호</div>
       <div class="info1 flex">TEL : 043-264-0993</div>
       <div class="info1 flex">FAX : 043-273-1033</div>
     </div>
