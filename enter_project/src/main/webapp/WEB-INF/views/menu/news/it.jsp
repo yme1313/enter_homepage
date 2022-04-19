@@ -33,20 +33,44 @@
    <div class="container news-body">
      <div class="news-intro">
        <div class="intro1 flex">IT소식</div>
-       <br><br><hr>
+         	<c:if test="${user.admin == '관리자'}">
+				<a href="<%=request.getContextPath()%>/it/register">
+					<button class="btn btn-outline-dark reg-btn">등록하기</button>
+				</a>
+			</c:if>
+       <br><br>
      </div>
    </div>
-   <div class="borad container">
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-       <div class="board-img"></div>
-   </div>
+	<div class="container" style="height : 1100px">
+		<div class="item" style="height : 1000px;">
+			<c:forEach items="${list}" var="board">
+			<a href="<%=request.getContextPath()%>/it/detail?num=${board.bd_num}">
+				<div class="board-img">
+					<img src="<%=request.getContextPath()%>/thum${board.fi_name}" style="width : 100%; height : 88%"></img>
+					<div class="bd_it_title">${board.bd_title}</div>
+				</div>
+			</a>
+			</c:forEach>
+		</div>
+		    <div class="my pagination justify-content-center">
+		    	<c:if test="${pm.prev}">
+			    	<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/it?page=${pm.startPage-1}">이전</a></li>
+			    </c:if>
+			    <c:forEach begin="${pm.startPage}" end="${pm.endPage}" var="index">
+			    	<c:choose>
+			    		<c:when test="${pm.criteria.page == index}">
+			    			<li class="page-item active"><a class="page-link" href="<%=request.getContextPath()%>/it?page=${index}">${index}</a></li>
+			    		</c:when>
+			    		<c:otherwise>
+			    			<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/it?page=${index}">${index}</a></li>
+			    		</c:otherwise>
+			    	</c:choose>
+			    </c:forEach>
+			    <c:if test="${pm.next}">
+			   		<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/it?page=${pm.endPage+1}">다음</a></li>
+			    </c:if>
+		    </div>
+	</div>	
 <script>
 	$(function(){
 	    $(document).ready(function(){
