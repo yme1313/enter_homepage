@@ -138,7 +138,7 @@
         <div class="second-menu-box-sub sub-title">비즈니스 목표달성, 업무성과 달성에 <span class="blue">최적화된 IT서비스</span>를 제공합니다.</div>
         <div class="second-menu-box-sub content">이를 통해 비용 효과적인 운영이 되도록 운영조직, 운영관리 프로세스, 
           운영관리 시스템들의 운영체계를 정립하는 접근방법을 제시합니다.</div>
-        <a href="#">
+        <a href="<%=request.getContextPath()%>/itService">
           <div class="second-menu-box-sub more">More View →</div>
         </a>
       </div>
@@ -215,7 +215,7 @@
          <div class="second-menu-box-sub sub-title">비즈니스 목표달성, 업무성과 달성에 <span class="blue">최적화된 IT서비스</span>를 제공합니다.</div>
          <div class="second-menu-box-sub content">이를 통해 비용 효과적인 운영이 되도록 운영조직, 운영관리 프로세스, 
            운영관리 시스템들의 운영체계를 정립하는 접근방법을 제시합니다.</div>
-         <a href="#">
+         <a href="<%=request.getContextPath()%>/itService">
            <div class="second-menu-box-sub more">More View →</div>
          </a>
        </div>

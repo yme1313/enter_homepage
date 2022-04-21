@@ -168,4 +168,36 @@ public class MenuController {
 		mv.setViewName("/template/menu/career/process");
 		return mv;
 	}
+	//사업분야
+	@GetMapping("/itService")
+	public ModelAndView getItService(ModelAndView mv) {
+		mv.setViewName("/template/menu/business/itService");
+		return mv;
+	}
+	@GetMapping("/case")
+	public ModelAndView getCase(ModelAndView mv) {
+		mv.setViewName("/template/menu/business/case");
+		return mv;
+	}
+	//기업소개
+	@GetMapping("/company")
+	public ModelAndView getCompany(ModelAndView mv) {
+		mv.setViewName("/template/menu/company/company");
+		return mv;
+	}
+	@GetMapping("/greetings")
+	public ModelAndView getGreetings(ModelAndView mv) {
+		mv.setViewName("/template/menu/company/greetings");
+		return mv;
+	}
+	@GetMapping("/history")
+	public ModelAndView getHistory(ModelAndView mv) {
+		mv.setViewName("/template/menu/company/history");
+		return mv;
+	}
+	@GetMapping("/awards")
+	public ModelAndView getAwards(ModelAndView mv) {
+		mv.setViewName("/template/menu/company/awards");
+		return mv;
+	}
 }

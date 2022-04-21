@@ -7,4 +7,5 @@ public class Proposal {
 	private int pr_num;
 	private String pr_name;
 	private String pr_file;
+	private String pr_valid;
 }

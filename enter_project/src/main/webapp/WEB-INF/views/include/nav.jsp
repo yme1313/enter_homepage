@@ -15,10 +15,10 @@
       </label>
     </div>
     <ul class="menu-bar">
-      <a href="#">
+      <a href="<%=request.getContextPath()%>/company">
         <div class="sub-menu s1">기업소개</div>
       </a>
-      <a href="#">
+      <a href="<%=request.getContextPath()%>/itService">
         <div class="sub-menu s2">사업분야</div>
       </a>
       <a href="<%=request.getContextPath()%>/psn">
@@ -34,24 +34,24 @@
 	 <div class="dropdown">
 	   <div class="dropmenu">
 	       <div class="sub-menu">
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/company">
 	           <div class="sub-menu-list">소개</div>
 	         </a>
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/greetings">
 	           <div class="sub-menu-list">인사말</div>
 	         </a>
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/history">
 	           <div class="sub-menu-list">연혁</div>
 	         </a>
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/awards">
 	           <div class="sub-menu-list">인증/수상</div>
 	         </a>
 	       </div>
 	       <div class="sub-menu">
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/itService">
 	           <div class="sub-menu-list">IT서비스</div>
 	         </a>
-	         <a href="#">
+	         <a href="<%=request.getContextPath()%>/case">
 	           <div class="sub-menu-list">주요사례</div>
 	         </a>
 	       </div>
@@ -88,17 +88,17 @@
         <li>
           <div class="ul1">기업소개</div>
           <ul class="res-sub-menu rs1">
-            <li><a href="#">소개</a></li>
-            <li><a href="#">인사말</a></li>
-            <li><a href="#">연혁</a></li>
-            <li><a href="#">인증/수상</a></li>
+            <li><a href="<%=request.getContextPath()%>/company">소개</a></li>
+            <li><a href="<%=request.getContextPath()%>/greetings">인사말</a></li>
+            <li><a href="<%=request.getContextPath()%>/history">연혁</a></li>
+            <li><a href="<%=request.getContextPath()%>/awards">인증/수상</a></li>
           </ul>
         </li>
         <li>
           <div class="ul2">사업분야</div>
           <ul class="res-sub-menu rs2">
-            <li><a href="#">IT서비스</a></li>
-            <li><a href="#">주요사례</a></li>
+            <li><a href="<%=request.getContextPath()%>/itService">IT서비스</a></li>
+            <li><a href="<%=request.getContextPath()%>/case">주요사례</a></li>
           </ul>
         </li>
         <li>

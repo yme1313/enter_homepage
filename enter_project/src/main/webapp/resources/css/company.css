@@ -1,0 +1,120 @@
+a:hover{
+	text-decoration : none;
+}
+.company-img{
+  width: 100%;
+  height: 280px;
+  line-height: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 10vw;
+}
+#company_bg_img{
+  width: 100%;
+  left: 0%;
+  height: 280px;
+  position: absolute;
+  z-index: -50;
+  opacity: 0.1;
+}
+.company-img #winter{
+  width: 380px;
+  position: absolute;
+  top: 5rem;
+  right: 120px;
+  display: none;
+} 
+.company-submenu{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+}
+.company-submenu-title-box{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    border-right : none;
+    display: flex;
+}
+.company-submenu-title-box #title{
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+.company-submenu-list-box{
+    display: flex;
+    width: 80%;
+ 	
+}
+.company-submenu-list-box a{
+    width: 15%;
+}
+.company-submenu-list-box .company-submenu-list{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.company-body{
+  margin-top: 1rem;
+}
+.intro1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.intro2{
+  font-size: 20px;
+  font-style:oblique;
+}
+.company-info{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.res-company-submenu-box{
+	display : none
+}
+.res-company-submenu-title-box{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    line-height: 60px;
+    text-align: center;
+}
+.res-company-submenu-list-box{
+    width: 100%;
+    height: 60px;
+    line-height : 60px;
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-top : none;
+    justify-content: space-around;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width : 945px) {
+	.company-img{
+		font-size: 25px;
+	}
+	.company-img #winter{
+		width: 250px;
+		position: absolute;
+		top: 7rem;
+		right: 10px;
+		display: none;
+	} 
+	.company-submenu-box{
+		display : none;
+	}
+	.res-company-submenu-box{
+		display : block;
+	}
+
+}

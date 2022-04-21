@@ -15,6 +15,7 @@ public class GuestVO {
 	private String ge_email;
 	private String ge_phone;
 	private Date ge_date;
+	private String ge_reply;
 	
 	//등록한 날짜를 년월일까지만 문자열로 보여주는 getter
 	public String getDate() {
