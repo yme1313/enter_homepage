@@ -55,10 +55,142 @@
    <div class="container company-body">
      <div class="company-intro">
        <div class="intro1 flex">소개</div>
-       <br><br>
+       <br>
      </div>
    </div>  
    <div class="company-box container"> 
+   	 <div class="flex">
+   	 	<div class="intro-sub-menu flex blue sub01">소개</div>
+		<div class="intro-sub-menu flex sub02">경영이념</div>
+   	 </div><br><br>
+   	 <div class="company-sub-box">
+	  	 <div class="sub-menu-text">
+	   	 	<div class="flex">고객의 정보시스템 업무 전반을 위탁받아</div>
+	   	 	<div class="flex">시스템 기획에서부터 설계, 운영, 하드웨어 및 소프트웨어의</div>
+	   	 	<div class="flex">개발과 유지보수를 책임지고 관리하는  <span class="blue-text ml-2">IT솔루션 전문 기업</span> 입니다.</div>
+	   	 </div><br><br><br>
+	   	 <div class="intro-body01">
+	   	 	<div class="flex">
+	   	 	  <img src="<%=request.getContextPath()%>/resources/img/엔터로고(무배경).png" id="company_logo_img">
+	   	 	</div><br><hr>
+	   	 	<div class="intro-body01-main">
+	 	 		<div class="intro-body01-left">
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/대표이사-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">대표이사 </div>
+							   	 <div>김해수 대표</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/설립일-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">설립일 </div>
+							   	 <div>2022.02</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/사업영역-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">사업영역 </div>
+							   	 <div>시스템통합(SI) 및 IT아웃소싱, 통합유지관리<br> SW개발 및 구축, 솔루션 유통</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/주소및연락처-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">소재지 </div>
+							   	 <div>충북 청주시 청원구 오창읍 중심상업로 32-13<br> 엔젤프리존 604, 605호</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 		</div>
+	   	 		<div class="intro-body01-right">
+	   	 			<img src="<%=request.getContextPath()%>/resources/img/IT가치-소개오른쪽.png" id="company_right_img">
+	   	 		</div>
+	   	 	</div>
+	   	 </div>   	 	
+   	 </div>
+   	 <div class="res-company-sub-box">
+	  	 <div class="sub-menu-text">
+	   	 	<div class="flex">고객의 정보시스템 업무 전반을</div>
+	   	 	<div class="flex">위탁받아 시스템 기획에서부터 설계,</div>
+	   	 	 <div class="flex">운영, 하드웨어 및 소프트웨어의</div>
+	   	 	<div class="flex">개발과 유지보수를 책임지고 관리하는</div>
+	   	 	<div class="flex"><span class="blue-text mr-2">IT솔루션 전문 기업 </span>입니다.</div>
+	   	 </div><br><br><br>
+	   	 <div class="intro-body01">
+	   	 	<div class="flex">
+	   	 	  <img src="<%=request.getContextPath()%>/resources/img/엔터로고(무배경).png" id="company_logo_img">
+	   	 	</div><br><hr>
+	   	 	<div class="intro-body01-main">
+	 	 		<div class="intro-body01-left">
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/대표이사-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">대표이사 </div>
+							   	 <div class="small-text">김해수 대표</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/설립일-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">설립일 </div>
+							   	 <div class="small-text">2022.02</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/사업영역-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">사업영역 </div>
+							   	 <div class="small-text">시스템통합(SI) 및 IT아웃소싱, 통합유지관리 SW개발 및 구축, 솔루션 유통</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+	 	 			<div class="intro-body01-left-index">
+	 	 				<div class="index-box">
+				  	 		<div class="left-img">
+					   	 	  <img src="<%=request.getContextPath()%>/resources/img/주소및연락처-소개.png" style="width : 100px">
+					   	 	</div> 		
+					   	 	<div class="right-text">
+							   	 <div class="mb-2 blue-text">소재지 </div>
+							   	 <div class="small-text">충북 청주시 청원구 오창읍<br> 중심상업로 32-13 엔젤프리존 604, 605호</div>
+						   	 </div> 					
+		 	 			</div>	
+	 	 			</div>
+		 		   	 <div class="intro-body01-right">
+		   	 			<img src="<%=request.getContextPath()%>/resources/img/IT가치-소개오른쪽.png" id="company_right_img">
+		   	 		</div>
+	 	 		</div>
+	   	 	</div>
+	   	 </div>   	 	
+   	 </div>   	 
    </div>
 
 
@@ -68,6 +200,23 @@
 	      $('#winter').fadeIn(3000);
 	    })
 	  })
+	var blue = 'blue';
+	var sub01 = $('.sub01');
+	var sub02 = $('.sub02');
+	var intro = $('.intro-body01')
+    $(function(){
+		$(sub02).click(function(){
+			sub01.removeClass(blue);
+			sub02.addClass(blue);
+			intro.css('display','none')
+		})
+		$(sub01).click(function(){
+			sub02.removeClass(blue);
+			sub01.addClass(blue);
+			intro.css('display','inline-block')
+		})
+		
+	})
 </script>
 </body>
 </html>

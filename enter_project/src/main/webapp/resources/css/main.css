@@ -192,6 +192,9 @@ a:hover{
   font-size: 25px;
   margin-bottom: 2vh;
 }
+.sssub1 img{  
+  width : 50px;
+}
 .res-footer-first-menu{
     display: none;
 }
@@ -533,7 +536,7 @@ ul{
   #res-footer{
     display: block;
     background-color: rgb(233, 240, 241);
-    height : 640px;
+    height : 660px;
   }
   .footer-first-menu, .res-footer-first-menu{
     padding: 0 2rem 0 6rem;

@@ -23,12 +23,12 @@
           <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 최고의 서비스만족을 제공합니다.
         </div>
         <div class="left-menu-sub3">
-          <a href="#">
+          <a href="<%=request.getContextPath()%>/company">
             <div class="left-menu-sub3-1 min1">
               <div class="left-menu-sub3-1-mini">
                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
                 <div class="left-menu-sub3-text1">
-                  경영철학<br>
+                  기업소개<br>
                   <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
                 </div>
               </div>
@@ -82,11 +82,11 @@
             <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 최고의 서비스만족을 제공합니다.
           </div>
           <div class="left-menu-sub3">
-            <a href="#">
+            <a href="<%=request.getContextPath()%>/company">
               <div class="left-menu-sub3-1 min1">
                 <div class="left-menu-sub3-1-mini">
                   <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
-                  <div class="left-menu-sub3-text1">경영철학
+                  <div class="left-menu-sub3-text1">기업소개
                     <br>
                     <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
                   </div>
@@ -159,11 +159,11 @@
            <span class="blue">엔터정보기술</span>은 풍부한 경험을 지닌 산업별 시스템 전문인력과 <br>관계사의 시스템에 대한 전문노하우를 보유하여 고객에게 <br>최고의 서비스만족을 제공합니다.
          </div>
          <div class="left-menu-sub3">
-           <a href="#">
+           <a href="<%=request.getContextPath()%>/company">
              <div class="left-menu-sub3-1 min1">
                <div class="left-menu-sub3-1-mini">
                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
-                 <div class="left-menu-sub3-text1">경영철학
+                 <div class="left-menu-sub3-text1">기업소개
                    <br>
                    <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
                  </div>
