@@ -1,6 +1,7 @@
 a:hover{
 	text-decoration : none;
 }
+/* 기업소개 */
 .company-img{
   width: 100%;
   height: 280px;
@@ -146,8 +147,49 @@ a:hover{
 .res-company-sub-box{
 	display : none;
 }
+.use-box{
+	display : flex;
+	justify-content: space-around;
+}
+.company-use{
+	display : none;
+}
+/* 인사말 */
+.greeting-box{
+	height : 800px;
+}
+.gr-title{
+	font-size : 35px;
+	margin-bottom : 45px;
+}
+.gr-body{
+	display : flex;
+	height : 710px;
+}
+.gr-img{
+	width : 50%;
+}
+.gr-content{
+	width : 50%;
+}
+.gr-con01, .gr-con02, .gr-con03, .gr-con04, .gr-con05, .gr-con06{
+	height : calc( 100% / 6);
+	font-size : 18px;
+}
+.gr-con01{
+	font-size : 28px;
+}
+.gr-con02, .gr-con03{
+	height : 80px;
+}
+.gr-con04{
+	height : 160px;
+}
+.res-greeting-box{
+	display : none;
+}
 
-
+/* 기능 클래스*/
 .flex{
   display: flex;
   justify-content: center;
@@ -162,6 +204,12 @@ a:hover{
 	font-weight : bold;
 }
 
+@media screen and (max-width : 1280px) {
+	.right-text{
+		margin-left : 20px;
+		margin-top : 15px;
+	}
+}
 @media screen and (max-width : 945px) {
 	.company-img{
 		font-size: 25px;
@@ -206,10 +254,48 @@ a:hover{
 		float : left;
 	}
 	.right-text{
+		margin-top : 30px;
 		width : 50%;
 	}
 	.small-text{
 		font-size : 14px;
 	}
-
+	.company-use img:first-child{
+		margin-bottom : 50px;
+	}
+	.greeting-box{
+		display : none;
+	}
+	.res-greeting-box{
+		display : block;
+	}
+	.gr-title{
+		font-size : 20px;
+		margin-bottom : 20px;
+	}
+	.gr-body{
+		display : block;
+	}
+	.gr-img{
+		width : 100%;
+	}
+	.gr-content{
+		width : 100%;
+	}
+	.gr-con01, .gr-con02, .gr-con03, .gr-con04, .gr-con05, .gr-con06{
+		display: flex;
+	    justify-content: center;
+ 	    align-items: center;
+ 	    font-size : 15px;
+	}
+	.gr-con01{
+		margin-bottom : 10px;
+		font-size : 25px;
+	}
+	.gr-con02, gr-con03{
+		height : 90px;
+	}
+	.gr-con04{
+		height : 140px;
+	}
 }

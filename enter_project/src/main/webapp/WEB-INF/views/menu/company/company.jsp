@@ -124,7 +124,15 @@
 	   	 			<img src="<%=request.getContextPath()%>/resources/img/IT가치-소개오른쪽.png" id="company_right_img">
 	   	 		</div>
 	   	 	</div>
-	   	 </div>   	 	
+	   	 </div>  
+	   	 <div class="use-box mb-4">
+	 	 	 <div class="company-use" style="width:45%">
+		   	   <img src="<%=request.getContextPath()%>/resources/img/경영이념.jpg" style="width:100%"> 	
+		   	 </div>    
+	   	   	 <div class="company-use" style="width:45%">	   	   
+		   	   <img src="<%=request.getContextPath()%>/resources/img/정신.jpg" style="width:100%"> 
+		    </div> 
+	   	 </div>	   	  	
    	 </div>
    	 <div class="res-company-sub-box">
 	  	 <div class="sub-menu-text">
@@ -189,8 +197,12 @@
 		   	 		</div>
 	 	 		</div>
 	   	 	</div>
-	   	 </div>   	 	
-   	 </div>   	 
+	   	 </div> 
+  	 	  <div class="company-use" style="width:100%">
+	   	 	<img src="<%=request.getContextPath()%>/resources/img/경영이념.jpg" style="width:100%"> 	
+	   	 	<img src="<%=request.getContextPath()%>/resources/img/정신.jpg" style="width:100%"> 
+	   	 </div>	 
+   	 </div>   	 		 
    </div>
 
 
@@ -200,20 +212,49 @@
 	      $('#winter').fadeIn(3000);
 	    })
 	  })
+	 /*
+	const mediaSize945 = window.matchMedia('(max-width : 945px)')
+	*/
 	var blue = 'blue';
 	var sub01 = $('.sub01');
 	var sub02 = $('.sub02');
 	var intro = $('.intro-body01')
+	var company = $('.company-use')
+	var res_sub = $('.res-company-sub-box');
+	/*
+	var res_sub_block = 
+		function(e){
+		if(e.matches){
+			res_sub.css('display','inline-block')
+			res_company.css('display','none')
+		} else {
+			return;
+		}
+	}
+	var res_sub_none = 
+		function(e){
+		if(e.matches){
+			res_sub.css('display','none')
+			res_company.css('display','inline-block')
+		} else {
+			return;
+		}
+	}
+	*/
     $(function(){
 		$(sub02).click(function(){
 			sub01.removeClass(blue);
 			sub02.addClass(blue);
 			intro.css('display','none')
+			//res_sub_none(mediaSize945);
+			company.css('display','inline-block')
 		})
 		$(sub01).click(function(){
 			sub02.removeClass(blue);
 			sub01.addClass(blue);
 			intro.css('display','inline-block')
+			//res_sub_block(mediaSize945);
+			company.css('display','none')
 		})
 		
 	})
