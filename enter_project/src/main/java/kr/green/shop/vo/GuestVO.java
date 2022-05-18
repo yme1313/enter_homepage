@@ -8,8 +8,8 @@ import lombok.Data;
 @Data
 public class GuestVO {
 	private int ge_num;
-	private int ge_pr_num;
 	private String ge_name;
+	private String ge_product;
 	private String ge_company;
 	private String ge_rank;
 	private String ge_email;

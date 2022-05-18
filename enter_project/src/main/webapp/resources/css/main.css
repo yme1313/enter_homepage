@@ -560,6 +560,9 @@ ul{
   .sub1{
     padding-top: 3vh;
   }
+  .sub4{
+  	padding-bottom : 0px;
+  }
   #bold{
     font-weight: bold;
     color: tomato;
