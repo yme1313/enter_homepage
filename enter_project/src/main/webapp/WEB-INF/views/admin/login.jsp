@@ -11,7 +11,7 @@
 	<title>엔터정보기술</title>
 </head>
 <body>
- <div class=container>
+ <div class="container" style="height : 700px;">
   <form class=login-box method="post" action="<%=request.getContextPath()%>/admin/login">
       <h2>로그인</h2>
       <div class="login-id">
