@@ -145,6 +145,23 @@
       <div class="second-menu-box">
         <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
       </div>
+   </div>
+   	<div class="second-menu2">
+       <div class="second-menu-box2">
+        <img class="second-menu-img" src="<%=request.getContextPath()%>/resources/img/SI컨스트럭션.png" alt="">
+      </div>
+      <div class="second-menu-box2">
+        <div class="second-menu-box-sub title">SI Construction</div>
+        <div class="second-menu-box-sub sub-title">
+	        <div>각 파트별 풍부한 경험을 지닌 전문가와 관계사의 노하우로 고객에게 </div>
+	        <div><span class="blue">최고의 서비스</span>를 제공합니다.</div>
+        </div>
+        <div class="second-menu-box-sub content">
+	        <div>고객의 정보시스템 업무 전반에 대해 시스템 설계, 운영, 하드웨어 및 </div>
+	        <div>소프트웨어의 구축과 유지보수를 책임지고 관리하여 각종 사고와 어려움을 해결,</div>
+	        <div> 원활한 업무 수행 할 수 있도록 기술 지원합니다.</div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- 반응형 body -->
@@ -223,13 +240,30 @@
          <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
        </div>
      </div>
+   	<div class="second-menu">
+      <div class="second-menu-box">
+        <div class="second-menu-box-sub title">SI Construction</div>
+        <div class="second-menu-box-sub sub-title">
+	        <div>각 파트별 풍부한 경험을 지닌 전문가와 관계사의 노하우로 고객에게 <span class="blue">최고의 서비스</span>를 제공합니다.</div>
+        </div>
+        <div class="second-menu-box-sub content">
+	        <div>고객의 정보시스템 업무 전반에 대해 시스템 설계, 운영, 하드웨어 및 소프트웨어의 구축과 유지보수를 책임지고 관리하여 각종 사고와 어려움을 해결,원활한 업무 수행 할 수 있도록 기술 지원합니다.</div>
+        </div>
+      </div>
+      <div class="second-menu-box">
+        <img class="second-menu-img" src="<%=request.getContextPath()%>/resources/img/SI컨스트럭션.png" alt="">
+      </div>
+    </div>     
   </div>  
 <script type="text/javascript">
 $(window).scroll(function(){
     if ($(this).scrollTop() > 200){
       $('.second-menu-box').fadeIn(1000);
     }
-    if ($(this).scrollTop() > 500){
+    if ($(this).scrollTop() > 600){
+        $('.second-menu-box2').fadeIn(1000);
+      }
+    if ($(this).scrollTop() > 800){
       $('.go-top').show()
     } else{
       $('.go-top').hide();

@@ -83,7 +83,7 @@ a:hover{
 }
 #boddy{
   padding: 0 4rem 0 6rem;
-  min-height: 1300px;
+  min-height: 1900px;
 }
 .first-menu{
   display: flex;
@@ -127,18 +127,35 @@ a:hover{
   display: inline-block;
 }
 .second-menu{
-  height: 330px;
+  height: 400px;
   margin-top: 10rem;
   display: flex;
+}
+.second-menu2{
+  height: 400px;
+  margin-top: 10rem;
 }
 .second-menu-box{
   width: 50%;
   display: none;
 }
+.second-menu-box2{
+  float: left;
+  display: none;
+}
+.second-menu-box2:nth-child(1){
+  width: 40%;
+}
+.second-menu-box2:nth-child(2){
+  width: 60%;
+}
 #second-menu-img{
   height: 330px;
   margin-top: 2rem;
   margin-left: 10rem;
+}
+.second-menu-img{
+  height: 330px;
 }
 #footer{
   height: 30vh;
@@ -216,7 +233,7 @@ a:hover{
 #bg-img{
   width: 100%;
   left: 0%;
-  height: 1300px;
+  height: 1900px;
   position: absolute;
   z-index: -50;
   opacity: 0.1;
@@ -227,7 +244,6 @@ a:hover{
 }
 .left-img{
   width: 60%;
-  margin-top: 2rem;
 }
 .left-menu-sub3-1-mini{
   margin: 0 auto;
@@ -309,7 +325,7 @@ a:hover{
     min-height: 1800px;
   }
   #bg-img{
-    height: 1800px;
+    height: 2500px;
   }
   .left-menu{
     margin-top: 4rem;
@@ -375,7 +391,7 @@ ul{
   padding:0;
 }
   #bg-img{
-    height: 3000px;
+    height: 3500px;
   }
   .top{
     display : none;
@@ -447,7 +463,7 @@ ul{
   #res-body{
     display: inline-block;
     width: 100%;
-    height: 2400px;
+    height: 3500px;
   }
   .res-sub-first-menu{
     width: 100%;
@@ -460,7 +476,6 @@ ul{
   }
   .left-img{
     width: 60%;
-    margin-top: 2rem;
   }
   .left-menu{
     margin-top: 1rem;
@@ -522,7 +537,7 @@ ul{
   }
   .second-menu{
 	display : block;
-    height: 330px;
+    height: 900px;
     margin-top:0;
   }
   .second-menu-box{
@@ -531,6 +546,12 @@ ul{
     width : 100%;
   }
   #second-menu-img{
+    width: 95%;
+    height: 330px;
+    margin-top: 2rem;
+    margin-left : 0;
+  } 
+   .second-menu-img{
     width: 95%;
     height: 330px;
     margin-top: 2rem;
