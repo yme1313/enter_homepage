@@ -54,7 +54,7 @@
      </div>
    </div>
 	<div class="container" style="height : 1400px">
-		<div class="item" style="height : 1320px;">
+		<div class="item">
 			<c:forEach items="${list}" var="board">
 			<a href="<%=request.getContextPath()%>/it/detail?num=${board.bd_num}">
 				<div class="board-img">

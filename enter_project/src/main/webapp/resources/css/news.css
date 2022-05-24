@@ -130,6 +130,9 @@ a:hover{
 	margin : 0.3rem;
 	font-size : 18px;
 }
+.item{
+	height : 1350px;
+}
 .res-news-submenu-box{
 	display : none
 }
@@ -178,14 +181,39 @@ a:hover{
 	.board-img{
 	    border: 1px solid #e0e0e0;
 	    box-shadow: 5px 5px 5px 5px #e0e0e0;
-	    width: 10rem;
-	    height: 12rem;
+	    width: 13rem;
+	    height: 16rem;
 	    float: left;
 	    margin: 0.5rem;
 	    margin-bottom: 0.8rem;
 	}
 	.bd_it_title{
-		font-size : 12px;
+		font-size : 17px;
 		margin : 0.1rem;
+	}
+	.item{
+		height : 1200px;
+	}
+}
+@media screen and (max-width : 420px){
+	.board-img{
+	    width: 10.8rem;
+   	    height: 12rem;
+
+	}
+	.bd_it_title{
+		font-size : 12px;
+	}
+	.item{
+		height : 1350px;
+	}
+}
+
+@media screen and (max-width : 390px){
+	.board-img{
+	    width: 9.2rem;
+	}
+	.item{
+		height : 1350px;
 	}
 }

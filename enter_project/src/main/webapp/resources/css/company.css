@@ -113,6 +113,7 @@ a:hover{
 }
 #company_right_img{
 	width : 100%;
+	height : 500px;
 }
 .intro-body01{
 	height : 900px;
@@ -315,20 +316,17 @@ a:hover{
 		width : 100%;
 	}
 	.gr-con01, .gr-con02, .gr-con03, .gr-con04, .gr-con05, .gr-con06{
-		display: flex;
-	    justify-content: center;
- 	    align-items: center;
  	    font-size : 15px;
 	}
 	.gr-con01{
-		margin-bottom : 10px;
+		margin-bottom : 40px;
 		font-size : 25px;
 	}
 	.gr-con02, gr-con03{
-		height : 90px;
+		height : 70px;
 	}
 	.gr-con04{
-		height : 140px;
+		height : 90px;
 	}
 	.history-box div{
 		font-size : 13px;
@@ -359,5 +357,13 @@ a:hover{
 	.award-sub-box{
 		height : 280px;
 	}
-	
+	.gr-title{
+		font-size : 19px;
+	}
+	.gr-con01, .gr-con02, .gr-con03, .gr-con04, .gr-con05, .gr-con06{
+ 	    font-size : 12px;
+	}	
+	.gr-con01{
+		font-size : 25px;
+	}
 }
