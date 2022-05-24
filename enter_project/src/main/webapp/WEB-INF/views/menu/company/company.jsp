@@ -93,7 +93,7 @@
 					   	 	</div> 		
 					   	 	<div class="right-text">
 							   	 <div class="mb-2 blue-text">설립일 </div>
-							   	 <div>2022.02</div>
+							   	 <div>1986.09</div>
 						   	 </div> 					
 		 	 			</div>	
 	 	 			</div>
@@ -166,7 +166,7 @@
 					   	 	</div> 		
 					   	 	<div class="right-text">
 							   	 <div class="mb-2 blue-text">설립일 </div>
-							   	 <div class="small-text">2022.02</div>
+							   	 <div class="small-text">1986.09</div>
 						   	 </div> 					
 		 	 			</div>	
 	 	 			</div>

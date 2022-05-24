@@ -58,9 +58,76 @@
        <br><br>
      </div>
    </div>  
-   <div class="company-box container"> 
+   <div class="award-main-box container"> 
+   	<div class="flex award-box">엔터정보기술은 <span class="blue-text ml-2 mr-2">대외적인 기술</span> 및 <span class="blue-text ml-2">내부인프라</span>에 대한 인증을 보유하고 있습니다.</div>
+   	<br><hr>
+   	<div class="award-img-box">
+   		<div class="award-sub-box">
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/엔큐브클라우드.jpg">
+	  			<div class="flex mt-3">eNcubeCLOUD</div>
+	  		</div>
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/eepple.jpg">
+	  			<div class="flex mt-3">eepple</div>
+	  		</div>
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/단말수신차단.jpg">
+	  			<div class="flex mt-3">단말기수신차단</div>
+	  		</div>
+ 	   	</div><hr>
+   		<div class="award-sub-box"> 	   	
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/명함정보관리.jpg">
+	  			<div class="flex mt-3">명합정보관리</div>
+	  		</div>
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/신고확인서.jpg">
+	  			<div class="flex mt-3">신고확인서</div>
+	  		</div>
+	  		<div class="award-img">
+	  			<img src="<%=request.getContextPath()%>/resources/img/기업부설.jpg">
+	  			<div class="flex mt-3">기업부설연구소</div>
+	  		</div> 		
+		</div>	
+   	</div>
    </div>
-
+   	<!-- 반응형 -->
+   	<div class="res-award-main-box">
+   		<div class="flex award-box">엔터정보기술은 <span class="blue-text ml-2 mr-2">대외적인 기술</span> 및</div> 
+   		<div class="flex award-box"><span class="blue-text ml-2">내부인프라</span>에 대한 인증을 보유하고 있습니다.</div>
+   		<br><hr>
+	   	<div class="award-img-box">
+	   		<div class="award-sub-box">
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/엔큐브클라우드.jpg">
+		  			<div class="flex mt-3">eNcubeCLOUD</div>
+		  		</div>
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/eepple.jpg">
+		  			<div class="flex mt-3">eepple</div>
+		  		</div>
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/단말수신차단.jpg">
+		  			<div class="flex mt-3">단말기수신차단</div>
+		  		</div>
+	 	   	</div><hr>
+	   		<div class="award-sub-box"> 	   	
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/명함정보관리.jpg">
+		  			<div class="flex mt-3">명합정보관리</div>
+		  		</div>
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/신고확인서.jpg">
+		  			<div class="flex mt-3">신고확인서</div>
+		  		</div>
+		  		<div class="award-img">
+		  			<img src="<%=request.getContextPath()%>/resources/img/기업부설.jpg">
+		  			<div class="flex mt-3">기업부설연구소</div>
+		  		</div> 		
+			</div>	
+	   	</div>
+   	</div>
 
 <script>
 	$(function(){
