@@ -18,7 +18,7 @@
       <a href="<%=request.getContextPath()%>/company">
         <div class="sub-menu s1">기업소개</div>
       </a>
-      <a href="<%=request.getContextPath()%>/itService">
+      <a href="<%=request.getContextPath()%>/itservice">
         <div class="sub-menu s2">사업분야</div>
       </a>
       <a href="<%=request.getContextPath()%>/psn">
@@ -48,7 +48,7 @@
 	         </a>
 	       </div>
 	       <div class="sub-menu">
-	         <a href="<%=request.getContextPath()%>/itService">
+	         <a href="<%=request.getContextPath()%>/itservice">
 	           <div class="sub-menu-list">IT서비스</div>
 	         </a>
 	         <a href="<%=request.getContextPath()%>/case">
@@ -97,7 +97,7 @@
         <li>
           <div class="ul2">사업분야</div>
           <ul class="res-sub-menu rs2">
-            <li><a href="<%=request.getContextPath()%>/itService">IT서비스</a></li>
+            <li><a href="<%=request.getContextPath()%>/itservice">IT서비스</a></li>
             <li><a href="<%=request.getContextPath()%>/case">주요사례</a></li>
           </ul>
         </li>

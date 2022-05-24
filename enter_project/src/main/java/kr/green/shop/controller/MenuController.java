@@ -169,7 +169,7 @@ public class MenuController {
 		return mv;
 	}
 	//사업분야
-	@GetMapping("/itService")
+	@GetMapping("/itservice")
 	public ModelAndView getItService(ModelAndView mv) {
 		mv.setViewName("/template/menu/business/itService");
 		return mv;

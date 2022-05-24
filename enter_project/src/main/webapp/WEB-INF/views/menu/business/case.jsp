@@ -18,7 +18,7 @@
        <div class="itService-submenu-title-box">
            <div id="title">사업분야</div>
            <div class="itService-submenu-list-box">
-               <a href="<%=request.getContextPath()%>/itService">
+               <a href="<%=request.getContextPath()%>/itservice">
                	<div class="itService-submenu-list">IT서비스</div>
                </a>
                <a href="<%=request.getContextPath()%>/case">
@@ -31,7 +31,7 @@
    <div class="res-itService-submenu-box">
      <div class="res-itService-submenu-title-box">사업분야</div>
      <div class="res-itService-submenu-list-box">
-         <a href="<%=request.getContextPath()%>/itService">
+         <a href="<%=request.getContextPath()%>/itservice">
          	<div class="itService-submenu-list">IT서비스</div>
          </a>
          <a href="<%=request.getContextPath()%>/case">
