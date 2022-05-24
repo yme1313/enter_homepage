@@ -58,7 +58,7 @@ a:hover{
 }
 .career-body{
   margin-top: 1rem;
-  height : 1600px;
+  height : 1350px;
 }
 .intro1{
   font-size: 50px;
@@ -147,7 +147,7 @@ a:hover{
     box-shadow: 5px 5px 5px 5px #e0e0e0;
     height : 200px;
 }
-.career-psn-body{
+.career-psn-body, .res-career-psn-body{
 	margin-top : 1rem;
 	height : 2200px;
 }
@@ -184,6 +184,9 @@ a:hover{
 	margin-right : 20px;
 	padding-left : 40px;
 }
+.res-career-psn-body, .res-career-psn-box, .res-career-body, .res-career-box{
+	display : none;
+}
 
 
 .flex{
@@ -209,5 +212,67 @@ a:hover{
 	.res-career-submenu-box{
 		display : block;
 	}
+	.career-psn-body, .career-psn-box, .career-body, .career-box{
+		display : none;
+	}
+	.res-career-psn-body, .res-career-psn-box, .res-career-body, .res-career-box{
+		display : block;
+	}
+	.res-career-psn-body{
+		height : 2500px;
+	}
+	.res-career-box{
+		height : 770px;
+	}
+	.psn-left-box, .psn-right-box{
+		display : block;
+		border : none;
+	}
+	.psn-img-box{
+		width : calc(100% / 3.5);
+		height : 210px;
+		margin-left : 8px;
+		margin-right : 8px;
+		margin-bottom : 20px;
+		padding : 3%;
+	}
+	.psn-left-01{
+		padding :0;
+		margin : 0;
+		width : 100%;
+	}
+	.psn-right-01{
+		padding :0;
+		margin : 0;
+		width : 100%;
+	}
+	.career-process-box{
+		display : block;
+		width : 70%;
+	}
+	.process-ing-box{
+		width : 85%;
+		margin-left : 6%;
+		margin-right : 0;
+		margin-bottom : 25px;
+	}
+	.career-left-box{
+		border : none;
+		padding-right : 10px;
+		margin-bottom : 70px;
+	}
+	.career-right-box{
+		padding-left : 10px;
+		padding-right : 10px;
+	}	
 
+}
+
+@media screen and (max-width : 765px) {
+	.psn-img-box{
+		height : 130px;
+	}
+	.res-career-psn-body{
+		height : 2200px;
+	}
 }
