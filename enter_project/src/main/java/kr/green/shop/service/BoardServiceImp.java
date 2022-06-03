@@ -19,7 +19,7 @@ public class BoardServiceImp implements BoardService{
 
 	@Autowired
 	BoardDAO boardDao;
-	
+	 
 	private String uploadPath = "C:\\Users\\user\\Desktop\\Homepage\\enter_project\\img\\uploadfiles";
 	
 	@Override

@@ -26,7 +26,7 @@ public class DBConnectionTest {
  
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        } 
     }
 
 }

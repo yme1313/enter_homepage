@@ -11,7 +11,7 @@ public class AdminVO {
 	public String getAdmin() {
 		if(ad_id.equals("enteritech")) {
 			return "관리자";
-		}
+		} 
 		return ad_id;
 	}
 }

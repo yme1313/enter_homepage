@@ -34,7 +34,7 @@ public class AdminController {
 			mv.setViewName("redirect:/login");
 		}
 		return mv;
-	}
+	} 
 	@GetMapping("logout")
 	public ModelAndView SignoutGet(ModelAndView mv, 
 			HttpServletRequest request,

@@ -12,5 +12,5 @@ public class HomeController {
 		mv.addObject("title","엔터정보기술");
 		mv.setViewName("/template/main/home");
 		return mv;
-	}
+	} 
 }
