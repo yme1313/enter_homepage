@@ -10,7 +10,7 @@
     <div class="home">
       <label class="home-img">
         <a href="<%=request.getContextPath()%>/">
-          <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
+          <img class="enter-logo" src="<%=request.getContextPath()%>/img/엔터-로고.png">
         </a>
       </label>
     </div>
@@ -79,7 +79,7 @@
   <div class="res-menu">
     <div class="res-top">
         <a href="<%=request.getContextPath()%>/">
-        <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
+        <img class="enter-logo" src="<%=request.getContextPath()%>/img/엔터-로고.png">
       </a>
       <a href="#" id="trigger"><i class="fas fa-bars"></i></a>
     </div>

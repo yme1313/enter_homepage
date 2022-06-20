@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="map-img">
-        <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="map_bg_img">
+        <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="map_bg_img">
       	오시는 길
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/오시는길-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/오시는길-페이지.png">
     </div>
     <div class="container map-body">
       <div class="map-intro">

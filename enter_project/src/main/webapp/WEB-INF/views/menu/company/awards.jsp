@@ -10,9 +10,9 @@
 </head>
 <body>
    <div class="company-img">
-       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="company_bg_img">
+       <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="company_bg_img">
  		인증/수상
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/기업소개-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/기업소개-페이지.png">
    </div>
    <div class="company-submenu-box">
        <div class="company-submenu-title-box">
@@ -64,29 +64,29 @@
    	<div class="award-img-box">
    		<div class="award-sub-box">
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/엔큐브클라우드.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/엔큐브클라우드.jpg">
 	  			<div class="flex mt-3">eNcubeCLOUD</div>
 	  		</div>
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/eepple.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/eepple.jpg">
 	  			<div class="flex mt-3">eepple</div>
 	  		</div>
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/단말수신차단.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/단말수신차단.jpg">
 	  			<div class="flex mt-3">단말기수신차단</div>
 	  		</div>
  	   	</div><hr>
    		<div class="award-sub-box"> 	   	
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/명함정보관리.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/명함정보관리.jpg">
 	  			<div class="flex mt-3">명합정보관리</div>
 	  		</div>
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/신고확인서.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/신고확인서.jpg">
 	  			<div class="flex mt-3">신고확인서</div>
 	  		</div>
 	  		<div class="award-img">
-	  			<img src="<%=request.getContextPath()%>/resources/img/기업부설.jpg">
+	  			<img src="<%=request.getContextPath()%>/img/기업부설.jpg">
 	  			<div class="flex mt-3">기업부설연구소</div>
 	  		</div> 		
 		</div>	
@@ -100,29 +100,29 @@
 	   	<div class="award-img-box">
 	   		<div class="award-sub-box">
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/엔큐브클라우드.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/엔큐브클라우드.jpg">
 		  			<div class="flex mt-3">eNcubeCLOUD</div>
 		  		</div>
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/eepple.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/eepple.jpg">
 		  			<div class="flex mt-3">eepple</div>
 		  		</div>
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/단말수신차단.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/단말수신차단.jpg">
 		  			<div class="flex mt-3">단말기수신차단</div>
 		  		</div>
 	 	   	</div><hr>
 	   		<div class="award-sub-box"> 	   	
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/명함정보관리.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/명함정보관리.jpg">
 		  			<div class="flex mt-3">명합정보관리</div>
 		  		</div>
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/신고확인서.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/신고확인서.jpg">
 		  			<div class="flex mt-3">신고확인서</div>
 		  		</div>
 		  		<div class="award-img">
-		  			<img src="<%=request.getContextPath()%>/resources/img/기업부설.jpg">
+		  			<img src="<%=request.getContextPath()%>/img/기업부설.jpg">
 		  			<div class="flex mt-3">기업부설연구소</div>
 		  		</div> 		
 			</div>	

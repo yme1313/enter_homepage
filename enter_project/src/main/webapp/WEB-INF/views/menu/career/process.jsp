@@ -10,9 +10,9 @@
 </head>
 <body>
    <div class="career-img">
-       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="career_bg_img">
+       <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="career_bg_img">
  		채용절차
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/인재채용-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/인재채용-페이지.png">
    </div>
    <div class="career-submenu-box">
        <div class="career-submenu-title-box">
@@ -37,15 +37,15 @@
     		<div class="flex" style="font-size : 19px; margin-bottom: 50px;"> 우수 인재를 키우고자 노력하고 있습니다.</div>
     		<div class="career-process-box">
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/주도적인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/주도적인재.png">
     				<div class="flex">주도적인 인재</div>
     			</div>
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/성장가능성인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/성장가능성인재.png">
     				<div class="flex">성장 가능성이 보이는 인재</div>
     			</div>
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/경험쌓을인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/경험쌓을인재.png">
     				<div class="flex">경험을 함께 쌓아갈 전문가</div>
     			</div>
     		</div>
@@ -124,15 +124,15 @@
     		<div class="flex" style="font-size : 17px; margin-bottom: 50px;"> 우수 인재를 키우고자 노력하고 있습니다.</div>
     		<div class="career-process-box">
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/주도적인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/주도적인재.png">
     				<div class="flex mb-3">주도적인 인재</div>
     			</div>
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/성장가능성인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/성장가능성인재.png">
     				<div class="flex mb-3">성장 가능성이 보이는 인재</div>
     			</div>
     			<div style="text-align : center;">
-    				<img class="process-img" src="<%=request.getContextPath()%>/resources/img/경험쌓을인재.png">
+    				<img class="process-img" src="<%=request.getContextPath()%>/img/경험쌓을인재.png">
     				<div class="flex">경험을 함께 쌓아갈 전문가</div>
     			</div>
     		</div>

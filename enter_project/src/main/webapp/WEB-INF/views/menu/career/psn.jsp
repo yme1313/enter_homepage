@@ -10,9 +10,9 @@
 </head>
 <body>
    <div class="career-img">
-       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="career_bg_img">
+       <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="career_bg_img">
  		인사제도
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/인재채용-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/인재채용-페이지.png">
    </div>
    <div class="career-submenu-box">
        <div class="career-submenu-title-box">
@@ -37,34 +37,34 @@
 	   	<div class="flex" style="font-size : 19px;">엔터정보기술은 전문 업무역량과 미래 비즈니스 환경변화에 대한 통찰력을 기반으로</div>
 	   	<div class="flex mb-3" style="font-size : 19px;">내부 구성원과 고객의 성공을 위해 헌신하는 인재를 추구합니다.</div>
 	   	<div style="text-align : center;">
-	   		<img src="<%=request.getContextPath()%>/resources/img/인사제도.png" style="width : 70%;">
+	   		<img src="<%=request.getContextPath()%>/img/인사제도.png" style="width : 70%;">
 	   	</div>
      </div>
      <div class="intro1 flex">직급체계</div>
      <div class="flex">엔터정보기술의 내부 구성원 직급체계를 안내합니다.</div>
        <div class="mt-5" style="width : 100%; height:350px;">
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/선임.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/선임.png" style="width : 100%;">
        	 	<div class="flex mt-2">선임</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/책임.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/책임.png" style="width : 100%;">
        	 	<div class="flex mt-2">책임</div>
        	 </div>
      	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/파트장.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/파트장.png" style="width : 100%;">
        	 	<div class="flex mt-2">파트장</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/총괄.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/총괄.png" style="width : 100%;">
        	 	<div class="flex mt-2">총괄</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/임원.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/임원.png" style="width : 100%;">
        	 	<div class="flex mt-2">임원</div>
        	 </div>
        	  <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/대표.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/대표.png" style="width : 100%;">
        	 	<div class="flex mt-2">대표</div>
        	 </div>     	       	    	       	
        </div>
@@ -76,11 +76,11 @@
 	   		</div>
 	   		<div class="psn-left-02" style="text-align : center;">
 	   			<div class="mb-2" style="color : #2db2e6;">합리적인 <br>승진 절차</div>
-	   			<img src="<%=request.getContextPath()%>/resources/img/합리적승인.png" style="width : 40%;">
+	   			<img src="<%=request.getContextPath()%>/img/합리적승인.png" style="width : 40%;">
 	   		</div>
 	   		<div class="psn-left-03" style="text-align : center;">
 	   			<div class="mb-2" style="color : #2db2e6;">구성원의 <br>동기 부여</div>
-	   			<img src="<%=request.getContextPath()%>/resources/img/동기부여.png" style="width : 40%;">
+	   			<img src="<%=request.getContextPath()%>/img/동기부여.png" style="width : 40%;">
 	   		</div>
 	   	</div>
 	   	<div class="psn-right-box">
@@ -90,7 +90,7 @@
 	   		</div>
 	   		<div class="psn-right-02" style="text-align : center;">
 	   			<div class="mb-2" style="color : #2db2e6;">합리적인 <br>보상</div>
-	   			<img src="<%=request.getContextPath()%>/resources/img/합리적보상.png" style="width : 40%;">
+	   			<img src="<%=request.getContextPath()%>/img/합리적보상.png" style="width : 40%;">
 	   		</div>  
 	   	</div>
    </div>
@@ -117,34 +117,34 @@
 	   	<div class="flex" style="font-size : 14px;">환경변화에 대한 통찰력을 기반으로 내부 구성원과 </div>
 	   	<div class="flex mb-5" style="font-size : 14px;">고객의 성공을 위해 헌신하는 인재를 추구합니다.</div>
 	   	<div style="text-align : center;">
-	   		<img src="<%=request.getContextPath()%>/resources/img/인사제도.png" style="width : 100%;">
+	   		<img src="<%=request.getContextPath()%>/img/인사제도.png" style="width : 100%;">
 	   	</div>
      </div>
      <div class="intro1 flex">직급체계</div>
      <div class="flex">엔터정보기술의 내부 구성원 직급체계를 안내합니다.</div>
        <div class="mt-5" style="width : 100%; height:420px;">
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/선임.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/선임.png" style="width : 100%;">
        	 	<div class="flex mt-2">선임</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/책임.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/책임.png" style="width : 100%;">
        	 	<div class="flex mt-2">책임</div>
        	 </div>
      	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/파트장.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/파트장.png" style="width : 100%;">
        	 	<div class="flex mt-2">파트장</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/총괄.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/총괄.png" style="width : 100%;">
        	 	<div class="flex mt-2">총괄</div>
        	 </div>
        	 <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/임원.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/임원.png" style="width : 100%;">
        	 	<div class="flex mt-2">임원</div>
        	 </div>
        	  <div class="psn-img-box">
-			<img src="<%=request.getContextPath()%>/resources/img/대표.png" style="width : 100%;">
+			<img src="<%=request.getContextPath()%>/img/대표.png" style="width : 100%;">
        	 	<div class="flex mt-2">대표</div>
        	 </div>     	       	    	       	
        </div>
@@ -157,11 +157,11 @@
 	   		<div style="width:100%; display : flex; justify-content: space-around;">
 	 			<div class="psn-left-02" style="text-align : center;">
 		   			<div class="mb-2" style="color : #2db2e6;">합리적인 <br>승진 절차</div>
-		   			<img src="<%=request.getContextPath()%>/resources/img/합리적승인.png" style="width : 40%;">
+		   			<img src="<%=request.getContextPath()%>/img/합리적승인.png" style="width : 40%;">
 		   		</div>
 		   		<div class="psn-left-03" style="text-align : center;">
 		   			<div class="mb-2" style="color : #2db2e6;">구성원의 <br>동기 부여</div>
-		   			<img src="<%=request.getContextPath()%>/resources/img/동기부여.png" style="width : 40%;">
+		   			<img src="<%=request.getContextPath()%>/img/동기부여.png" style="width : 40%;">
 		   		</div>
 	   		</div>
 	   	</div>
@@ -173,7 +173,7 @@
 	   		<div style="width:100%; display : flex; justify-content: space-around;">
 	   			<div class="psn-right-02" style="text-align : center;">
 		   			<div class="mb-2" style="color : #2db2e6;">합리적인 <br>보상</div>
-		   			<img src="<%=request.getContextPath()%>/resources/img/합리적보상.png" style="width : 40%;">
+		   			<img src="<%=request.getContextPath()%>/img/합리적보상.png" style="width : 40%;">
 		   		</div>  
 	   		</div>
 	   		

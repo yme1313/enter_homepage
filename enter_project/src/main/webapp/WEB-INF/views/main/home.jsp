@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="boddy">
-    <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="bg-img">
+    <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="bg-img">
     <div class="first-menu">
       <div class="left-menu">
         <div class="left-menu-sub1">
@@ -26,7 +26,7 @@
           <a href="<%=request.getContextPath()%>/company">
             <div class="left-menu-sub3-1 min1">
               <div class="left-menu-sub3-1-mini">
-                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                <img class="left-img" src="<%=request.getContextPath()%>/img/경영철학.png" alt="">
                 <div class="left-menu-sub3-text1">
                   기업소개<br>
                   <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
@@ -37,7 +37,7 @@
           <a href="<%=request.getContextPath()%>/psn">
             <div class="left-menu-sub3-1 min2">
               <div class="left-menu-sub3-1-mini">
-                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                <img class="left-img" src="<%=request.getContextPath()%>/img/인재채용.png" alt="">
                 <div class="left-menu-sub3-text2">
                   인재채용<br>
                   <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
@@ -48,7 +48,7 @@
             <a href="<%=request.getContextPath()%>/news">
             <div class="left-menu-sub3-1 min3">
               <div class="left-menu-sub3-1-mini">
-                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                <img class="left-img" src="<%=request.getContextPath()%>/img/뉴스레터.png" alt="">
                 <div class="left-menu-sub3-text3">
                   뉴스레터<br>
                   <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다. </div> 
@@ -59,7 +59,7 @@
             <a href="<%=request.getContextPath()%>/map">
             <div class="left-menu-sub3-1 min4">
               <div class="left-menu-sub3-1-mini">
-                <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                <img class="left-img" src="<%=request.getContextPath()%>/img/오시는길.png" alt="">
                 <div class="left-menu-sub3-text4">
                   오시는길 <br>
                   <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="right-menu"> 
-        <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
+        <img id="right-img" src="<%=request.getContextPath()%>/img/오른쪽배경.png" alt="">
       </div>
     </div>
     <div class="res-sub-first-menu">
@@ -85,7 +85,7 @@
             <a href="<%=request.getContextPath()%>/company">
               <div class="left-menu-sub3-1 min1">
                 <div class="left-menu-sub3-1-mini">
-                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                  <img class="left-img" src="<%=request.getContextPath()%>/img/경영철학.png" alt="">
                   <div class="left-menu-sub3-text1">기업소개
                     <br>
                     <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
@@ -96,7 +96,7 @@
             <a href="<%=request.getContextPath()%>/psn">
               <div class="left-menu-sub3-1 min2">
                 <div class="left-menu-sub3-1-mini">
-                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                  <img class="left-img" src="<%=request.getContextPath()%>/img/인재채용.png" alt="">
                   <div class="left-menu-sub3-text2">인재채용
                     <br>
                     <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
@@ -107,7 +107,7 @@
             <a href="<%=request.getContextPath()%>/news">
               <div class="left-menu-sub3-1 min3">
                 <div class="left-menu-sub3-1-mini">
-                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                  <img class="left-img" src="<%=request.getContextPath()%>/img/뉴스레터.png" alt="">
                   <div class="left-menu-sub3-text3">뉴스레터
                     <br>
                     <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다.</div> 
@@ -118,7 +118,7 @@
             <a href="<%=request.getContextPath()%>/map">
               <div class="left-menu-sub3-1 min4">
                 <div class="left-menu-sub3-1-mini">
-                  <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                  <img class="left-img" src="<%=request.getContextPath()%>/img/오시는길.png" alt="">
                   <div class="left-menu-sub3-text4">오시는길
                      <br>
                     <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
@@ -129,7 +129,7 @@
           </div>
         </div>
         <div class="right-menu"> 
-          <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
+          <img id="right-img" src="<%=request.getContextPath()%>/img/오른쪽배경.png" alt="">
         </div>
       </div>
     <div class="second-menu">
@@ -143,12 +143,12 @@
         </a>
       </div>
       <div class="second-menu-box">
-        <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
+        <img id="second-menu-img" src="<%=request.getContextPath()%>/img/비즈니스이미지1.png" alt="">
       </div>
    </div>
    	<div class="second-menu2">
        <div class="second-menu-box2">
-        <img class="second-menu-img" src="<%=request.getContextPath()%>/resources/img/SI컨스트럭션.png" alt="">
+        <img class="second-menu-img" src="<%=request.getContextPath()%>/img/SI컨스트럭션.png" alt="">
       </div>
       <div class="second-menu-box2">
         <div class="second-menu-box-sub title">SI Construction</div>
@@ -166,7 +166,7 @@
   </div>
   <!-- 반응형 body -->
  <div id="res-body">
-   <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" alt="" id="bg-img">
+   <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" alt="" id="bg-img">
    <div class="res-sub-first-menu">
        <div class="left-menu">
            <div class="left-memu-sub1-title">전문화된 기술력과 노하우를 기반으로!</div>
@@ -179,7 +179,7 @@
            <a href="<%=request.getContextPath()%>/company">
              <div class="left-menu-sub3-1 min1">
                <div class="left-menu-sub3-1-mini">
-                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/경영철학.png" alt="">
+                 <img class="left-img" src="<%=request.getContextPath()%>/img/경영철학.png" alt="">
                  <div class="left-menu-sub3-text1">기업소개
                    <br>
                    <div class="font-size-10">고객의 정보시스템을 위탁받아 고객감동을 실천합니다.</div> 
@@ -190,7 +190,7 @@
            <a href="<%=request.getContextPath()%>/psn">
              <div class="left-menu-sub3-1 min2">
                <div class="left-menu-sub3-1-mini">
-                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/인재채용.png" alt="">
+                 <img class="left-img" src="<%=request.getContextPath()%>/img/인재채용.png" alt="">
                  <div class="left-menu-sub3-text2">인재채용
                    <br>
                    <div class="font-size-10">엔터정보기술과 함께 발전할 수 있는 인재를 채용합니다.</div> 
@@ -201,7 +201,7 @@
             <a href="<%=request.getContextPath()%>/news">
              <div class="left-menu-sub3-1 min3">
                <div class="left-menu-sub3-1-mini">
-                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/뉴스레터.png" alt="">
+                 <img class="left-img" src="<%=request.getContextPath()%>/img/뉴스레터.png" alt="">
                  <div class="left-menu-sub3-text3">뉴스레터
                    <br>
                    <div class="font-size-10">엔터정보기술은 다양한 사회 활동에 참여합니다.</div> 
@@ -212,7 +212,7 @@
             <a href="<%=request.getContextPath()%>/map">
              <div class="left-menu-sub3-1 min4">
                <div class="left-menu-sub3-1-mini">
-                 <img class="left-img" src="<%=request.getContextPath()%>/resources/img/오시는길.png" alt="">
+                 <img class="left-img" src="<%=request.getContextPath()%>/img/오시는길.png" alt="">
                  <div class="left-menu-sub3-text4">오시는길
                     <br>
                    <div class="font-size-10">엔터정보기술에 방문하시면 최고의 만족을 제공할 것을 약속합니다.</div> 
@@ -223,7 +223,7 @@
          </div>
        </div>
        <div class="right-menu"> 
-         <img id="right-img" src="<%=request.getContextPath()%>/resources/img/오른쪽배경.png" alt="">
+         <img id="right-img" src="<%=request.getContextPath()%>/img/오른쪽배경.png" alt="">
        </div>
      </div>
      <div class="second-menu">
@@ -237,7 +237,7 @@
          </a>
        </div>
        <div class="second-menu-box">
-         <img id="second-menu-img" src="<%=request.getContextPath()%>/resources/img/비즈니스이미지1.png" alt="">
+         <img id="second-menu-img" src="<%=request.getContextPath()%>/img/비즈니스이미지1.png" alt="">
        </div>
      </div>
    	<div class="second-menu">
@@ -251,7 +251,7 @@
         </div>
       </div>
       <div class="second-menu-box">
-        <img class="second-menu-img" src="<%=request.getContextPath()%>/resources/img/SI컨스트럭션.png" alt="">
+        <img class="second-menu-img" src="<%=request.getContextPath()%>/img/SI컨스트럭션.png" alt="">
       </div>
     </div>     
   </div>  

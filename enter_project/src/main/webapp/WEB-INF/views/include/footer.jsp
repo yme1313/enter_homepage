@@ -16,7 +16,7 @@
       </div>
         <div class="footer-first-menu-sub sub2">
           <div class="sssub1">
-            <img src="<%=request.getContextPath()%>/resources/img/회사.png"> COMPANY
+            <img src="<%=request.getContextPath()%>/img/회사.png"> COMPANY
           </div>
           <div class="sssub2">엔터정보기술</div>
           <div class="sssub2">대표이사 : 김해수</div>
@@ -24,14 +24,14 @@
         </div>
         <div class="footer-first-menu-sub sub3">
           <div class="sssub1">
-            <img src="<%=request.getContextPath()%>/resources/img/컨텍트.png"> CONTACT
+            <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
           </div>
           <div class="sssub2">전화 : 043-264-0993</div>
           <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
         </div>
         <div class="footer-first-menu-sub sub4">
           <div class="sssub1">
-            <img src="<%=request.getContextPath()%>/resources/img/이메일.png"> E-MAIL
+            <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
           </div>
           <div class="sssub2">본사 : help@enteritech.com</div>
           <div class="sssub2">영업팀 : help@enteritech.com</div>
@@ -47,7 +47,7 @@
          <div class="include"> 
           <div class="footer-first-menu-sub sub2">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/회사.png"> COMPANY
+              <img src="<%=request.getContextPath()%>/img/회사.png"> COMPANY
             </div>
             <div class="sssub2">엔터정보기술</div>
             <div class="sssub2">대표이사 : 김해수</div>
@@ -55,14 +55,14 @@
           </div>
           <div class="footer-first-menu-sub sub3">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/컨텍트.png"> CONTACT
+              <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
             </div>
             <div class="sssub2">전화 : 043-264-0993</div>
             <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
           </div>
           <div class="footer-first-menu-sub sub4">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/이메일.png"> E-MAIL
+              <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
             </div>
             <div class="sssub2">본사 : help@enteritech.com</div>
             <div class="sssub2">영업팀 : help@enteritech.com</div>
@@ -71,7 +71,7 @@
       </div>
     <div class="footer-second-menu">
       <a class="admin-login-btn" href="<%=request.getContextPath()%>/login">
-        <img class="enter-logo" src="<%=request.getContextPath()%>/resources/img/엔터-로고.png">
+        <img class="enter-logo" src="<%=request.getContextPath()%>/img/엔터-로고.png">
       </a>
       <c:if test="${user == null}">
       	<div class="copyright">COPYRIGHT(C) 2020 ENTERITECH ALL RIGHT RESERVED</div>  
@@ -97,7 +97,7 @@
         </div>
           <div class="footer-first-menu-sub sub2">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/회사.png"> COMPANY
+              <img src="<%=request.getContextPath()%>/img/회사.png"> COMPANY
             </div>
             <div class="sssub2">엔터정보기술</div>
             <div class="sssub2">대표이사 : 김해수</div>
@@ -105,14 +105,14 @@
           </div>
           <div class="footer-first-menu-sub sub3">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/컨텍트.png"> CONTACT
+              <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
             </div>
             <div class="sssub2">전화 : 043-264-0993</div>
             <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 <br>중심상업로 32-13 엔젤프리존 604, 605호</div>
           </div>
           <div class="footer-first-menu-sub sub4">
             <div class="sssub1">
-              <img src="<%=request.getContextPath()%>/resources/img/이메일.png"> E-MAIL
+              <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
             </div>
             <div class="sssub2">본사 : help@enteritech.com</div>
             <div class="sssub2">영업팀 : help@enteritech.com</div>

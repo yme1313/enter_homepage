@@ -12,9 +12,9 @@
 </head>
 <body>
    <div class="news-img">
-       <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
+       <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
  		뉴스레터
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/홍보센터-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/홍보센터-페이지.png">
    </div>
    <div class="news-submenu-box">
        <div class="news-submenu-title-box">

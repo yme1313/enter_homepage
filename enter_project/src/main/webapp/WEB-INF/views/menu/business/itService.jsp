@@ -12,7 +12,7 @@
    <div class="itService-img">
        <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="itService_bg_img">
  		IT서비스
-       <img id="winter" src="<%=request.getContextPath()%>/resources/img/IT서비스-페이지.png">
+       <img id="winter" src="<%=request.getContextPath()%>/img/IT서비스-페이지.png">
    </div>
    <div class="itService-submenu-box">
        <div class="itService-submenu-title-box">
