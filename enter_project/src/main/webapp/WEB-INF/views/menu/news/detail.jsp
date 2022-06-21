@@ -76,7 +76,7 @@
 				<div class="bd-ad-id mr-4">작성자 : 관리자</div>
 				<div class="bd-date ml-4">등록일 : ${board.date}</div>   
 			</div>
-			<div style="width : 100%; height : 1000px">${board.bd_content}</div>
+			<div style="width : 100%; height : 1000px; overflow-y : auto;">${board.bd_content}</div>
 		<a href="<%=request.getContextPath()%>/it"><button type="button" class="btn btn-outline-dark">목록</button></a>
 		<c:if test="${user != null && user.ad_id == board.bd_ad_id }">
 			<a href="<%=request.getContextPath()%>/it/modify?num=${board.bd_num}">

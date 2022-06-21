@@ -11,7 +11,8 @@
 </head>
 <body>
    <div class="news-img">
-       <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
+       <img src="<%=request.getContextPath()%>/img/KakaoTalk_2022041
+       2_145152801.jpg" id="news_bg_img">
      	  IT소식
        <img id="winter" src="<%=request.getContextPath()%>/img/홍보센터-페이지.png">
      </div>
@@ -54,6 +55,9 @@
      </div>
    </div>
 	<div class="container" style="height : 1400px">
+		 <c:if test="${list.size() == 0 }">
+		 	<h1 class="flex mt-5">현재 준비 중입니다.</h1>
+		 </c:if>
 		<div class="item">
 			<c:forEach items="${list}" var="board">
 			<a href="<%=request.getContextPath()%>/it/detail?num=${board.bd_num}">

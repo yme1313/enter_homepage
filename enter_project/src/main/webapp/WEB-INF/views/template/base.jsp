@@ -14,6 +14,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/main.js"></script>
 <script src="https://kit.fontawesome.com/f9d926306a.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" sizes="16x16" href="<%=request.getContextPath()%>/img/favicon-16x16.png">
+<link rel="manifest" href="<%=request.getContextPath()%>/img/manifest.json">
+<meta name="theme-color" content="#ffffff">
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 </head>
 <body>

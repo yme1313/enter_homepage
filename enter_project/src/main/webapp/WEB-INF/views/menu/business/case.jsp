@@ -19,7 +19,7 @@
            <div id="title">사업분야</div>
            <div class="itService-submenu-list-box">
                <a href="<%=request.getContextPath()%>/itservice">
-               	<div class="itService-submenu-list">IT서비스</div>
+               	<div class="itService-submenu-list">정보보안</div>
                </a>
                <a href="<%=request.getContextPath()%>/case">
                	<div class="itService-submenu-list">주요사례</div>
@@ -32,7 +32,7 @@
      <div class="res-itService-submenu-title-box">사업분야</div>
      <div class="res-itService-submenu-list-box">
          <a href="<%=request.getContextPath()%>/itservice">
-         	<div class="itService-submenu-list">IT서비스</div>
+         	<div class="itService-submenu-list">정보보안</div>
          </a>
          <a href="<%=request.getContextPath()%>/case">
          	<div class="itService-submenu-list">주요사례</div>

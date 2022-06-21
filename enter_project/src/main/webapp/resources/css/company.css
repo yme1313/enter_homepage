@@ -101,9 +101,7 @@ a:hover{
 	font-size : 20px;
 	cursor : pointer;
 	color : blue;
-}
-.intro-sub-menu:last-child{
-	border-left : none;
+	outline : 1px solid blue;
 }
 .sub-menu-text{
 	font-size : 22px;

@@ -49,7 +49,7 @@
 	       </div>
 	       <div class="sub-menu">
 	         <a href="<%=request.getContextPath()%>/itservice">
-	           <div class="sub-menu-list">IT서비스</div>
+	           <div class="sub-menu-list">정보보안</div>
 	         </a>
 	         <a href="<%=request.getContextPath()%>/case">
 	           <div class="sub-menu-list">주요사례</div>

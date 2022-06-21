@@ -92,11 +92,56 @@ a:hover{
     border-top : none;
     justify-content: space-around;
 }
+.it-submenu-box{
+	margin-left : 2%;
+}
+.intro-sub-menu{
+	border : 1px solid blue;
+	width : 350px;
+	height : 50px;
+	line-height : 50x;
+	font-size : 20px;
+	cursor : pointer;
+	color : blue;
+	float : left;
+	outline : 1px solid blue;
+}
+.itService-img-box{
+	margin : 130px 0 ;
+}
+.imgBox{
+	display : none;
+	width : 100%
+}
+.s01{
+	display : inline-block;	
+}
+/*
+.sub01{
+	border-bottom : none;
+}
+.sub02{
+	border-right : none;
+	border-bottom : none;
+	border-left : none;
+}
+.sub03{
+	border-bottom : none;
+}
+.sub05{
+	border-right : none;
+	border-left : none;
+}
+*/
 
 .flex{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.blue{
+	background : blue;
+	color : white;
 }
 
 @media screen and (max-width : 945px) {
@@ -116,5 +161,35 @@ a:hover{
 	.res-itService-submenu-box{
 		display : block;
 	}
+	.it-submenu-box{
+		margin-left : 6rem;
+	}
+	.intro-sub-menu{
+		width : 170px;
+		height : 30px;
+		line-height : 30x;
+		font-size : 10px;
+	}
+}
+@media screen and (max-width : 420px){
+	.it-submenu-box{
+		margin-left : 6%;
+	}
+}
 
+@media screen and (max-width : 391px){
+	.it-submenu-box{
+		margin-left : 7%;
+	}
+	.intro-sub-menu{
+		width : 150px;
+		height : 25px;
+		line-height : 25px;
+		font-size : 10px;
+	}
+}
+@media screen and (max-width : 361px){
+	.it-submenu-box{
+		margin-left : 5%;
+	}
 }
