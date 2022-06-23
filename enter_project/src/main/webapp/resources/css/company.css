@@ -241,6 +241,12 @@ a:hover{
 		margin-top : 15px;
 	}
 }
+@media screen and (max-width : 1000px) {
+	.right-text{
+		width : 50%;
+		font-size : 15px;
+	}	
+}	
 @media screen and (max-width : 945px) {
 	.company-img{
 		font-size: 25px;
@@ -286,7 +292,7 @@ a:hover{
 	}
 	.right-text{
 		margin-top : 30px;
-		width : 50%;
+		width : 70%;
 	}
 	.small-text{
 		font-size : 14px;
@@ -363,5 +369,8 @@ a:hover{
 	}	
 	.gr-con01{
 		font-size : 25px;
+	}
+	.right-text{
+		width : 50%;
 	}
 }

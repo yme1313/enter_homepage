@@ -8,6 +8,10 @@
 	insert into board(bd_ad_id, bd_title, bd_content, bd_type)
 		values( #{bd_ad_id}, #{bd_title}, #{bd_content}, #{bd_type})
 	</insert>
+	<insert id="insertCaseBoard" useGeneratedKeys="true" parameterType="kr.green.shop.vo.BoardVO" keyProperty="bd_num">
+	insert into board(bd_ad_id, bd_title, bd_content, bd_case, bd_type)
+		values( #{bd_ad_id}, #{bd_title}, #{bd_content}, #{bd_case}, #{bd_type})
+	</insert>
 	<insert id="insertFile">
 		insert into `file`(fi_bd_num ,fi_name,fi_oriName)
 			values(#{file.fi_bd_num}, #{file.fi_name}, #{file.fi_oriName})
@@ -20,6 +24,12 @@
 			limit #{pageStart}, #{perPageNum}
 	</select>
 	<select id="getItBoardList" resultType="kr.green.shop.vo.BoardVO">
+		select * from board join `file` on board.bd_num = `file`.fi_bd_num
+			where bd_valid = 'y' and bd_type = #{bd_type} and fi_valid = 'y'
+			order by bd_num desc
+			limit #{pageStart}, #{perPageNum}
+	</select>
+	<select id="getCaseBoardList" resultType="kr.green.shop.vo.BoardVO">
 		select * from board join `file` on board.bd_num = `file`.fi_bd_num
 			where bd_valid = 'y' and bd_type = #{bd_type} and fi_valid = 'y'
 			order by bd_num desc
@@ -43,6 +53,13 @@
 		update board set
 				bd_title = #{dbBoard.bd_title},
 				bd_content = #{dbBoard.bd_content}
+			where bd_num = #{dbBoard.bd_num}
+	</update>
+	<update id="uodateCaseBoard">
+		update board set
+				bd_title = #{dbBoard.bd_title},
+				bd_content = #{dbBoard.bd_content},
+				bd_case = #{dbBoard.bd_case}
 			where bd_num = #{dbBoard.bd_num}
 	</update>
 	<update id="deleteBoard">

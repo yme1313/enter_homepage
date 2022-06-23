@@ -97,7 +97,7 @@ a:hover{
 }
 .intro-sub-menu{
 	border : 1px solid blue;
-	width : 350px;
+	width : calc(100% / 3);
 	height : 50px;
 	line-height : 50x;
 	font-size : 20px;
@@ -116,32 +116,63 @@ a:hover{
 .s01{
 	display : inline-block;	
 }
-/*
-.sub01{
-	border-bottom : none;
+.case-box{
+	height : 1500px;
 }
-.sub02{
-	border-right : none;
-	border-bottom : none;
-	border-left : none;
+.case-info{
+	font-size : 35px;
 }
-.sub03{
-	border-bottom : none;
+.case-content-con{
+	height : 72px;
 }
-.sub05{
-	border-right : none;
-	border-left : none;
+.case-list{
+	height : 200px;
+	padding : 20px;
 }
-*/
+.case-img, .case-title, .case-content{
+	float : left;	
+}
+.case-img{
+	width : 35%;
+}
+.case-title{
+	width : 15%;
+}
+.case-content{
+	width : 42%;
+}
+.case-img-box{
+	margin-top : 30px;
+	margin-left : 5%;
+	width : 200px;
+	height : 100px;
+	border : 1px solid #e0e0e0;
+}
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+    background: grey;
+    border-color: grey;
+    color : white;
+}
 
 .flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .blue{
 	background : blue;
 	color : white;
+}
+.bold{
+	font-weight : bold;
+}
+.reg-btn{
+	float : right;
 }
 
 @media screen and (max-width : 945px) {
@@ -170,10 +201,42 @@ a:hover{
 		line-height : 30x;
 		font-size : 10px;
 	}
+	.case-info{
+		font-size : 19px;
+	}
+	.case-img{
+		float : none;
+	}
+	.case-list{
+		padding : 0;
+		height : 270px;
+	}
+	.case-img-box{
+		margin-top : 0;
+		margin-left : 0;
+	}
+	.case-content{
+		width : 80%;
+	}
+	.case-content-con{
+		height : 83px;
+	}
+	.case-box{
+		height : 1900px;
+	}
 }
 @media screen and (max-width : 420px){
 	.it-submenu-box{
 		margin-left : 6%;
+	}
+	.case-list{
+		height : 290px;
+	}
+	.case-content-con{
+		height : 110px;
+	}
+	.case-box{
+		height : 2050px;
 	}
 }
 
@@ -191,5 +254,14 @@ a:hover{
 @media screen and (max-width : 361px){
 	.it-submenu-box{
 		margin-left : 5%;
+	}
+	.case-list{
+		height : 310px;
+	}
+	.case-content-con{
+		height : 130px;
+	}
+	.case-box{
+		height : 2150px;
 	}
 }

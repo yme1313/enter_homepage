@@ -60,7 +60,14 @@
 	    $('#summernote').summernote({
 	        placeholder: '내용을 입력하세요.',
 	        tabsize: 2,
-	        height: 500
+	        height: 500,
+	        callbacks: {
+	        	onImageUpload: function(files, editor, welEditable) {
+	        		for(var i = files.length -1; i>=0; i--) {
+	        			sendFile(files[i], this);
+	        		}
+	        	}
+	        }
 	      });
 	  })
 </script>

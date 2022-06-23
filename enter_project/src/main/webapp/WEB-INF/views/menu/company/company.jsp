@@ -104,7 +104,7 @@
 					   	 	</div> 		
 					   	 	<div class="right-text">
 							   	 <div class="mb-2 blue-text">사업영역 </div>
-							   	 <div>시스템통합(SI) 및 IT아웃소싱, 통합유지관리<br> SW개발 및 구축, 솔루션 유통</div>
+							   	 <div>시스템통합(SI) 및 IT아웃소싱, 통합유지관리 SW개발 및 구축, 솔루션 유통</div>
 						   	 </div> 					
 		 	 			</div>	
 	 	 			</div>
@@ -115,7 +115,7 @@
 					   	 	</div> 		
 					   	 	<div class="right-text">
 							   	 <div class="mb-2 blue-text">소재지 </div>
-							   	 <div>충북 청주시 청원구 오창읍 중심상업로 32-13<br> 엔젤프리존 604, 605호</div>
+							   	 <div>충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
 						   	 </div> 					
 		 	 			</div>	
 	 	 			</div>

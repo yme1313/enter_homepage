@@ -33,6 +33,12 @@ public interface BoardService {
 
 	void deleteItBoard(Integer num, AdminVO admin);
 
+	ArrayList<BoardVO> getCaseBoardList(Criteria cri);
+
+	void insertCaseBoard(BoardVO board, AdminVO admin, MultipartFile[] file);
+
+	void updateCaseBoard(BoardVO board, MultipartFile[] file);
+
 
 
 

@@ -43,10 +43,66 @@
    <div class="container itService-body">
      <div class="itService-intro">
        <div class="intro1 flex">주요사례</div>
+       <c:if test="${user.admin == '관리자'}">
+			<a href="<%=request.getContextPath()%>/case/register">
+				<button class="btn btn-outline-dark reg-btn">등록하기</button>
+			</a>
+		</c:if>
        <br><br>
      </div>
    </div>  
    <div class="itService-box container"> 
+   	<div>
+   		<div class="case-info flex mb-4">각 사업별 주요 사례를 소개합니다.</div><hr>
+   		<div class="case-box container">
+			 <c:if test="${list.size() == 0 }">
+			 	<h1 class="flex mt-5">현재 준비 중입니다.</h1>
+			 </c:if>
+ 			<c:forEach items="${list}" var="board">
+	 			<div class="case-list">
+		   			<div class="case-img">
+		   				<img src="<%=request.getContextPath()%>/thum${board.fi_name}" class="case-img-box">
+		   			</div>
+		   			<div class="case-title">
+		   				<div class="mt-2 mb-3 bold">회사명</div>
+		   				<div class="mb-3 case-content-con">구축</div>
+		   				<div class="mt-1">업종</div>
+		   			</div>
+		   			<div class="case-content">
+			   			<div class="mt-2 mb-3 bold">${board.bd_title}</div>
+			   			<div class="mb-3 case-content-con">${board.bd_content}</div>
+			   			<div class="mt-1">${board.bd_case}</div>
+		   			</div>
+		   			<c:if test="${user.admin == '관리자'}">
+		   				<a href="<%=request.getContextPath()%>/case/modify?num=${board.bd_num}">
+							<button class="btn btn-outline-dark">수정</button>
+						</a>
+						<a href="<%=request.getContextPath()%>/case/delete?num=${board.bd_num}">
+							<button class="btn btn-outline-dark">삭제</button>
+						</a>
+		   			</c:if>
+		   		</div><hr>
+			</c:forEach>
+			<div class="my pagination justify-content-center">
+		    	<c:if test="${pm.prev}">
+			    	<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${pm.startPage-1}">이전</a></li>
+			    </c:if>
+			    <c:forEach begin="${pm.startPage}" end="${pm.endPage}" var="index">
+			    	<c:choose>
+			    		<c:when test="${pm.criteria.page == index}">
+			    			<li class="page-item active"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${index}">${index}</a></li>
+			    		</c:when>
+			    		<c:otherwise>
+			    			<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${index}">${index}</a></li>
+			    		</c:otherwise>
+			    	</c:choose>
+			    </c:forEach>
+			    <c:if test="${pm.next}">
+			   		<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${pm.endPage+1}">다음</a></li>
+			    </c:if>
+		    </div>
+   		</div>
+   	</div>
    </div>
 
 
@@ -54,7 +110,7 @@
 	$(function(){
 	    $(document).ready(function(){
 	      $('#winter').fadeIn(3000);
-	    })
+	    })	    
 	  })
 </script>
 </body>
