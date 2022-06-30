@@ -107,8 +107,8 @@ public class BoardServiceImp implements BoardService{
 			board.setBd_valid("y");
 		}
 		FileVO fileList = boardDao.getFileList(board.getBd_num());
-		if(fileList != null) {
-			deleteFileVO(fileList);
+		if(fileList == null) {
+			return;
 		}
 		if(file != null) {
 			for(MultipartFile tmp : file) {
@@ -183,8 +183,8 @@ public class BoardServiceImp implements BoardService{
 			board.setBd_valid("y");
 		}
 		FileVO fileList = boardDao.getFileList(board.getBd_num());
-		if(fileList != null) {
-			deleteFileVO(fileList);
+		if(fileList == null) {
+			return;
 		}
 		if(file != null) {
 			for(MultipartFile tmp : file) {

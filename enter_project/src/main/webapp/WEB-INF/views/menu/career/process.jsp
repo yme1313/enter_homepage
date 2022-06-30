@@ -19,11 +19,14 @@
            <div id="title">인재채용</div>
            <div class="career-submenu-list-box">
                <a href="<%=request.getContextPath()%>/psn">
-               	<div class="career-submenu-list">인사제도</div>
+               	    <div class="career-submenu-list">인사제도</div>
                </a>
                <a href="<%=request.getContextPath()%>/process">
-               	<div class="career-submenu-list">채용절차</div>
+               		<div class="career-submenu-list">채용절차</div>
                </a>
+               <a href="<%=request.getContextPath()%>/benefit">
+		        	<div class="career-submenu-list">복리후생</div>
+		        </a>
            </div>
        </div>
    </div>
@@ -110,6 +113,9 @@
         </a>
         <a href="<%=request.getContextPath()%>/process">
         	<div class="career-submenu-list">채용절차</div>
+        </a>
+        <a href="<%=request.getContextPath()%>/benefit">
+        	<div class="career-submenu-list">복리후생</div>
         </a>
     </div>
   </div> 

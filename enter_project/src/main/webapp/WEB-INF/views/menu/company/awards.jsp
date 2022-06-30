@@ -79,7 +79,7 @@
    		<div class="award-sub-box"> 	   	
 	  		<div class="award-img">
 	  			<img src="<%=request.getContextPath()%>/img/명함정보관리.jpg">
-	  			<div class="flex mt-3">명합정보관리</div>
+	  			<div class="flex mt-3">명함정보관리</div>
 	  		</div>
 	  		<div class="award-img">
 	  			<img src="<%=request.getContextPath()%>/img/신고확인서.jpg">

@@ -168,6 +168,11 @@ public class MenuController {
 		mv.setViewName("/template/menu/career/process");
 		return mv;
 	}
+	@GetMapping("/benefit")
+	public ModelAndView getBenefit(ModelAndView mv) {
+		mv.setViewName("/template/menu/career/benefit");
+		return mv;
+	}
 	//사업분야
 	@GetMapping("/itservice")
 	public ModelAndView getItService(ModelAndView mv) {

@@ -62,6 +62,9 @@
 	         <a href="<%=request.getContextPath()%>/process">
 	           <div class="sub-menu-list">채용절차</div>
 	         </a>
+	         <a href="<%=request.getContextPath()%>/benefit">
+	        	<div class="career-submenu-list">복리후생</div>
+	         </a>
 	       </div>
 	       <div class="sub-menu">
 	         <a href="<%=request.getContextPath()%>/it">
@@ -97,7 +100,7 @@
         <li>
           <div class="ul2">사업분야</div>
           <ul class="res-sub-menu rs2">
-            <li><a href="<%=request.getContextPath()%>/itservice">IT서비스</a></li>
+            <li><a href="<%=request.getContextPath()%>/itservice">정보보안</a></li>
             <li><a href="<%=request.getContextPath()%>/case">주요사례</a></li>
           </ul>
         </li>
@@ -106,6 +109,7 @@
           <ul class="res-sub-menu rs3">
             <li><a href="<%=request.getContextPath()%>/psn">인사제도</a></li>
             <li><a href="<%=request.getContextPath()%>/process">채용절차</a></li>
+            <li><a href="<%=request.getContextPath()%>/benefit">복리후생</a></li>
           </ul>
         </li>
         <li>

@@ -326,7 +326,7 @@ a:hover{
 		margin-bottom : 40px;
 		font-size : 25px;
 	}
-	.gr-con02, gr-con03{
+	.gr-con02, .gr-con03{
 		height : 70px;
 	}
 	.gr-con04{
@@ -370,7 +370,13 @@ a:hover{
 	.gr-con01{
 		font-size : 25px;
 	}
+	.gr-con02, .gr-con03{
+		height : 50px;
+	}
 	.right-text{
 		width : 50%;
+	}
+	.history-img img{
+		width : 100%;
 	}
 }

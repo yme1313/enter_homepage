@@ -122,14 +122,11 @@ a:hover{
 .case-info{
 	font-size : 35px;
 }
-.case-content-con{
-	height : 72px;
-}
 .case-list{
 	height : 200px;
 	padding : 20px;
 }
-.case-img, .case-title, .case-content{
+.case-img, .case-title, .case-content, .case-plus, .case-admin{
 	float : left;	
 }
 .case-img{
@@ -139,7 +136,20 @@ a:hover{
 	width : 15%;
 }
 .case-content{
-	width : 42%;
+	width : 40%;
+}
+.case-plus{
+	width : 5%;
+}
+.case-admin{
+	width : 5%;
+}
+.plus-btn{
+	padding : 0.1rem 0.5rem;
+}
+.minus-btn{
+	padding : 0.1rem 0.65rem;
+	display : none;
 }
 .case-img-box{
 	margin-top : 30px;
@@ -170,6 +180,11 @@ a:hover{
 }
 .bold{
 	font-weight : bold;
+}
+.overflow-text{
+	text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .reg-btn{
 	float : right;
@@ -218,9 +233,6 @@ a:hover{
 	.case-content{
 		width : 80%;
 	}
-	.case-content-con{
-		height : 83px;
-	}
 	.case-box{
 		height : 1900px;
 	}
@@ -231,9 +243,6 @@ a:hover{
 	}
 	.case-list{
 		height : 290px;
-	}
-	.case-content-con{
-		height : 110px;
 	}
 	.case-box{
 		height : 2050px;
@@ -257,9 +266,6 @@ a:hover{
 	}
 	.case-list{
 		height : 310px;
-	}
-	.case-content-con{
-		height : 130px;
 	}
 	.case-box{
 		height : 2150px;

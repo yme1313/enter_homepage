@@ -64,8 +64,10 @@
 	   	 	<div class="flex">관계사의 시스템에 대한 <span class="blue-text ml-2">전문노하우</span>를 보유하여</div>
 	   	 	<div class="flex">고객에게 최고의 서비스 만족을 제공합니다.</div>
    	 </div>
-   	 <div class="history-img">
-   	 	<img src="<%=request.getContextPath()%>/resources/img/연혁.png" style="width : 100%;">
+   	 <div class="history-img mt-5">
+	   	 <div class="flex">
+	   	 	<img src="<%=request.getContextPath()%>/resources/img/회사연혁.png">
+	   	 </div>
    	 	<div class="history-text">엔터정보기술의 도전은 계속 됩니다.</div>
    	 </div>
    </div>

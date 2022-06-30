@@ -13,7 +13,7 @@
 <body>
    <div class="news-img">
        <img src="<%=request.getContextPath()%>/img/KakaoTalk_20220412_145152801.jpg" id="news_bg_img">
- 		뉴스레터
+ 		주요사례
        <img id="winter" src="<%=request.getContextPath()%>/img/IT서비스-페이지.png">
    </div>
    <div class="news-submenu-box">

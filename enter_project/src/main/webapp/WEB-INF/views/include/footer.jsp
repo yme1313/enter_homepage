@@ -19,7 +19,7 @@
             <img src="<%=request.getContextPath()%>/img/회사.png"> COMPANY
           </div>
           <div class="sssub2">엔터정보기술</div>
-          <div class="sssub2">대표이사 : 김해수</div>
+          <div class="sssub2">대표이사 : 강동순</div>
           <div class="sssub2">사업자번호 : 301-22-54357</div>
         </div>
         <div class="footer-first-menu-sub sub3">
@@ -27,14 +27,15 @@
             <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
           </div>
           <div class="sssub2">전화 : 043-264-0993</div>
-          <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
+          <div class="sssub2">FAX : 043-273-1033</div>
+          <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13</div>
+          <div class="sssub2">엔젤프리존 604, 605호</div>
         </div>
         <div class="footer-first-menu-sub sub4">
           <div class="sssub1">
             <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
           </div>
-          <div class="sssub2">본사 : help@enteritech.com</div>
-          <div class="sssub2">영업팀 : help@enteritech.com</div>
+          <div class="sssub2">문의 : help@enteritech.com</div>
         </div>
     </div>
     <div class="res-footer-first-menu">
@@ -58,14 +59,14 @@
               <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
             </div>
             <div class="sssub2">전화 : 043-264-0993</div>
-            <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
+	        <div class="sssub2">팩스 : 043-273-1033</div>
+	        <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13 엔젤프리존 604, 605호</div>
           </div>
           <div class="footer-first-menu-sub sub4">
             <div class="sssub1">
               <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
             </div>
-            <div class="sssub2">본사 : help@enteritech.com</div>
-            <div class="sssub2">영업팀 : help@enteritech.com</div>
+            <div class="sssub2">문의 : help@enteritech.com</div>
           </div>
         </div>
       </div>
@@ -107,15 +108,16 @@
             <div class="sssub1">
               <img src="<%=request.getContextPath()%>/img/컨텍트.png"> CONTACT
             </div>
-            <div class="sssub2">전화 : 043-264-0993</div>
-            <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 <br>중심상업로 32-13 엔젤프리존 604, 605호</div>
+	          <div class="sssub2">전화 : 043-264-0993</div>
+	          <div class="sssub2">FAX : 043-273-1033</div>
+	          <div class="sssub2">주소 : 충북 청주시 청원구 오창읍 중심상업로 32-13</div>
+	          <div class="sssub2">엔젤프리존 604, 605호</div>
           </div>
           <div class="footer-first-menu-sub sub4">
             <div class="sssub1">
               <img src="<%=request.getContextPath()%>/img/이메일.png"> E-MAIL
             </div>
-            <div class="sssub2">본사 : help@enteritech.com</div>
-            <div class="sssub2">영업팀 : help@enteritech.com</div>
+            <div class="sssub2">문의 : help@enteritech.com</div>
           </div>
       </div>
     </div>

@@ -70,16 +70,26 @@
 		   			</div>
 		   			<div class="case-content">
 			   			<div class="mt-2 mb-3 bold">${board.bd_title}</div>
-			   			<div class="mb-3 case-content-con">${board.bd_content}</div>
+			   			<div class="mb-3 case-content-con overflow-text">${board.bd_content}</div>
 			   			<div class="mt-1">${board.bd_case}</div>
 		   			</div>
+				 	<div class="case-plus">
+			   			<div class="mt-2 mb-3">&nbsp; </div>
+			   			<div class="ml-3 mb-3">
+			   				<button class="btn btn-outline-dark plus-btn">+</button>
+			   				<button class="btn btn-outline-dark minus-btn">-</button>
+			   			</div>
+			   			<div class="mt-1">&nbsp; </div>
+		   			</div>		   			
 		   			<c:if test="${user.admin == '관리자'}">
-		   				<a href="<%=request.getContextPath()%>/case/modify?num=${board.bd_num}">
-							<button class="btn btn-outline-dark">수정</button>
-						</a>
-						<a href="<%=request.getContextPath()%>/case/delete?num=${board.bd_num}">
-							<button class="btn btn-outline-dark">삭제</button>
-						</a>
+			   			<div class="case-admin">
+						   	<a href="<%=request.getContextPath()%>/case/modify?num=${board.bd_num}">
+								<button class="btn btn-outline-dark">수정</button>
+							</a>
+							<a href="<%=request.getContextPath()%>/case/delete?num=${board.bd_num}">
+								<button class="btn btn-outline-dark">삭제</button>
+							</a>
+			   			</div>
 		   			</c:if>
 		   		</div><hr>
 			</c:forEach>
@@ -110,7 +120,28 @@
 	$(function(){
 	    $(document).ready(function(){
 	      $('#winter').fadeIn(3000);
-	    })	    
+	    })	
+	    var plus_btn = $('.plus-btn');
+	    var minus_btn = $('.minus-btn');
+	    var overflow_text = 'overflow-text'
+	    $(plus_btn).on("click",function(){
+	    	var con_content = $(this).parent().parent().siblings('.case-content').children('.case-content-con')
+	    	var con_title = $(this).parent().parent().siblings('.case-title').children('.case-content-con')
+	    	con_content.css('height', '85px');
+	    	con_title.css('height', '85px');
+	    	con_content.removeClass(overflow_text);
+	    	$(this).hide();
+	    	$(this).siblings('.minus-btn').show();
+	    })
+	    $(minus_btn).on("click",function(){
+	    	var con_content = $(this).parent().parent().siblings('.case-content').children('.case-content-con')
+	    	var con_title = $(this).parent().parent().siblings('.case-title').children('.case-content-con')
+	    	con_content.css('height', '');
+	    	con_title.css('height', '');
+	    	con_content.addClass(overflow_text);
+	    	$(this).hide();
+	    	$(this).siblings('.plus-btn').show();
+	    })
 	  })
 </script>
 </body>
