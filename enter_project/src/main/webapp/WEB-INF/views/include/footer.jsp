@@ -19,7 +19,7 @@
             <img src="<%=request.getContextPath()%>/img/회사.png"> COMPANY
           </div>
           <div class="sssub2">엔터정보기술</div>
-          <div class="sssub2">대표이사 : 강동순</div>
+          <div class="sssub2">대표이사 : 김해수</div>
           <div class="sssub2">사업자번호 : 301-22-54357</div>
         </div>
         <div class="footer-first-menu-sub sub3">

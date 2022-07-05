@@ -54,7 +54,7 @@
 				<div class="flex">Creative</div>
 			</div>
 		</div>
-     <div class="career-intro" style="margin-top : 10rem;">
+     <div class="career-intro" style="margin-top : 10rem; height : 330px;">
 	     <div class="benefit-list-box">
 	     	<div class="benefit-right">
 	     		<img src="<%=request.getContextPath()%>/img/기본지원.png">
@@ -64,6 +64,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 법정퇴직연금, 4대 보험 가입</li>
 	     			<li>· 중식제공, 연차 지원</li>
+	     			<li>· 출산 전·후 휴가 제도 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -76,6 +77,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 경조 휴가</li>
 	     			<li>· 경조금 지원</li>
+	     			<li>· 경조 화환 지급</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -87,7 +89,8 @@
 	     		<div class="benefit-left-title mt-3">개인생활지원</div>
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 생일축하금 지원</li>
-	     			<li>· 명절 귀향비 지원</li>
+	     			<li>· 명절 선물 제공</li>
+	     			<li>· 도서구입비 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -100,6 +103,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 포상휴가</li>
 	     			<li>· 장기근속자 포상금 지원</li>
+	     			<li>· 성과급, 상여금 지급</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -112,10 +116,12 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 업무차량, 이동통신장비 지원</li>
 	     			<li>· 대리운전비 지원, 차량유지비 지원</li>
+	     			<li>· 직무교육비 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
      </div>
+     <div style="font-weight : bold; font-size : 30px;">※ 각종 복리 후생 지원은 근속 년수 및 성과에 따라 차등 지급(지원) 될 수 있습니다.</div>
    </div>  
   <!-- 반응형  메뉴 -->   
   <div class="res-career-submenu-box">
@@ -153,7 +159,7 @@
 				<div class="flex">Creative</div>
 			</div>
 		</div>
-     <div class="career-intro" style="margin-top : 5rem;">
+     <div class="career-intro" style="margin-top : 5rem; height : 690px;">
 	     <div class="benefit-list-box">
 	     	<div class="benefit-right">
 	     		<img src="<%=request.getContextPath()%>/img/기본지원.png">
@@ -163,6 +169,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 법정퇴직연금, 4대 보험 가입</li>
 	     			<li>· 중식제공, 연차 지원</li>
+	     			<li>· 출산 전·후 휴가 제도 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -175,6 +182,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 경조 휴가</li>
 	     			<li>· 경조금 지원</li>
+	     			<li>· 경조 화환 지급</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -187,6 +195,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 생일축하금 지원</li>
 	     			<li>· 명절 귀향비 지원</li>
+	     			<li>· 도서구입비 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -199,6 +208,7 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 포상휴가</li>
 	     			<li>· 장기근속자 포상금 지원</li>
+	     			<li>· 성과급, 상여금 지급</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
@@ -211,10 +221,12 @@
 	     		<ul class="benefit-left-content mt-1">
 	     			<li>· 업무차량, 이동통신장비 지원</li>
 	     			<li>· 대리운전비 지원, 차량유지비 지원</li>
+	     			<li>· 직무교육비 지원</li>
 	     		</ul>
 	     	</div>     	
 	     </div>
      </div>
+     <div style="font-weight : bold;">※ 각종 복리 후생 지원은 근속 년수 및 성과에 따라 차등 지급(지원) 될 수 있습니다.</div>
    </div>  
 
 
