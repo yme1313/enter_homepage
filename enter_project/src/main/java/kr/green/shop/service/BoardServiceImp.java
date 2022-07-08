@@ -159,39 +159,5 @@ public class BoardServiceImp implements BoardService{
 	public ArrayList<BoardVO> getCaseBoardList(Criteria cri) {
 		return boardDao.getCaseBoardList(cri);
 	}
-	@Override
-	public void insertCaseBoard(BoardVO board, AdminVO admin, MultipartFile[] file) {
-		if(board == null || admin == null) {
-			return;
-		}
-		board.setBd_ad_id(admin.getAd_id());
-		board.setBd_type("case");
-		boardDao.insertCaseBoard(board);
-		if(file == null) {
-			return;
-		}
-		for(MultipartFile tmp : file) {
-			insertFileVO(tmp, board.getBd_num());
-		}
-	}
-	@Override
-	public void updateCaseBoard(BoardVO board, MultipartFile[] file) {
-		if(board == null || board.getBd_num() < 0) {
-			return;
-		}
-		if(board.getBd_valid() == null) {
-			board.setBd_valid("y");
-		}
-		FileVO fileList = boardDao.getFileList(board.getBd_num());
-		if(fileList == null) {
-			return;
-		}
-		if(file != null) {
-			for(MultipartFile tmp : file) {
-				insertFileVO(tmp, board.getBd_num());
-			}
-		}
-		boardDao.uodateCaseBoard(board);	
-	}
 	
 }

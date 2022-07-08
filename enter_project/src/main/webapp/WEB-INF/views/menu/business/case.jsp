@@ -11,18 +11,21 @@
 <body>
    <div class="itService-img">
        <img src="<%=request.getContextPath()%>/resources/img/KakaoTalk_20220412_145152801.jpg" id="itService_bg_img">
- 		주요사례
+ 		레페런스
        <img id="winter" src="<%=request.getContextPath()%>/img/IT서비스-페이지.png">
    </div>
    <div class="itService-submenu-box">
        <div class="itService-submenu-title-box">
            <div id="title">사업분야</div>
            <div class="itService-submenu-list-box">
+           	   <a href="<%=request.getContextPath()%>/portfolio">
+               	<div class="itService-submenu-list">포트폴리오</div>
+               </a>
                <a href="<%=request.getContextPath()%>/itservice">
                	<div class="itService-submenu-list">정보보안</div>
                </a>
                <a href="<%=request.getContextPath()%>/case">
-               	<div class="itService-submenu-list">주요사례</div>
+               	<div class="itService-submenu-list">레퍼런스</div>
                </a>
            </div>
        </div>
@@ -31,88 +34,37 @@
    <div class="res-itService-submenu-box">
      <div class="res-itService-submenu-title-box">사업분야</div>
      <div class="res-itService-submenu-list-box">
+     	<a href="<%=request.getContextPath()%>/portfolio">
+           <div class="itService-submenu-list">포트폴리오</div>
+        </a>
          <a href="<%=request.getContextPath()%>/itservice">
          	<div class="itService-submenu-list">정보보안</div>
          </a>
          <a href="<%=request.getContextPath()%>/case">
-         	<div class="itService-submenu-list">주요사례</div>
+         	<div class="itService-submenu-list">레퍼런스</div>
          </a>
      </div>
    </div> 
    
    <div class="container itService-body">
      <div class="itService-intro">
-       <div class="intro1 flex">주요사례</div>
-       <c:if test="${user.admin == '관리자'}">
-			<a href="<%=request.getContextPath()%>/case/register">
-				<button class="btn btn-outline-dark reg-btn">등록하기</button>
-			</a>
-		</c:if>
+       <div class="intro1 flex">레퍼런스</div>
        <br><br>
      </div>
    </div>  
    <div class="itService-box container"> 
-   	<div>
-   		<div class="case-info flex mb-4">각 사업별 주요 사례를 소개합니다.</div><hr>
-   		<div class="case-box container">
-			 <c:if test="${list.size() == 0 }">
-			 	<h1 class="flex mt-5">현재 준비 중입니다.</h1>
-			 </c:if>
- 			<c:forEach items="${list}" var="board">
-	 			<div class="case-list">
-		   			<div class="case-img">
-		   				<img src="<%=request.getContextPath()%>/thum${board.fi_name}" class="case-img-box">
-		   			</div>
-		   			<div class="case-title">
-		   				<div class="mt-2 mb-3 bold">회사명</div>
-		   				<div class="mb-3 case-content-con">구축</div>
-		   				<div class="mt-1">업종</div>
-		   			</div>
-		   			<div class="case-content">
-			   			<div class="mt-2 mb-3 bold">${board.bd_title}</div>
-			   			<div class="mb-3 case-content-con overflow-text">${board.bd_content}</div>
-			   			<div class="mt-1">${board.bd_case}</div>
-		   			</div>
-				 	<div class="case-plus">
-			   			<div class="mt-2 mb-3">&nbsp; </div>
-			   			<div class="ml-3 mb-3">
-			   				<button class="btn btn-outline-dark plus-btn">+</button>
-			   				<button class="btn btn-outline-dark minus-btn">-</button>
-			   			</div>
-			   			<div class="mt-1">&nbsp; </div>
-		   			</div>		   			
-		   			<c:if test="${user.admin == '관리자'}">
-			   			<div class="case-admin">
-						   	<a href="<%=request.getContextPath()%>/case/modify?num=${board.bd_num}">
-								<button class="btn btn-outline-dark">수정</button>
-							</a>
-							<a href="<%=request.getContextPath()%>/case/delete?num=${board.bd_num}">
-								<button class="btn btn-outline-dark">삭제</button>
-							</a>
-			   			</div>
-		   			</c:if>
-		   		</div><hr>
-			</c:forEach>
-			<div class="my pagination justify-content-center">
-		    	<c:if test="${pm.prev}">
-			    	<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${pm.startPage-1}">이전</a></li>
-			    </c:if>
-			    <c:forEach begin="${pm.startPage}" end="${pm.endPage}" var="index">
-			    	<c:choose>
-			    		<c:when test="${pm.criteria.page == index}">
-			    			<li class="page-item active"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${index}">${index}</a></li>
-			    		</c:when>
-			    		<c:otherwise>
-			    			<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${index}">${index}</a></li>
-			    		</c:otherwise>
-			    	</c:choose>
-			    </c:forEach>
-			    <c:if test="${pm.next}">
-			   		<li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/case?page=${pm.endPage+1}">다음</a></li>
-			    </c:if>
-		    </div>
-   		</div>
-   	</div>
+     <div class="it-submenu-box">
+   	 	<div class="intro-sub-menu1 flex blue sub01">제조/기업</div>
+		<div class="intro-sub-menu1 flex sub02">금융/의료</div>
+		<div class="intro-sub-menu1 flex sub03">공공</div>
+		<div class="intro-sub-menu1 flex sub04">교육</div>
+   	 </div><br>
+   	 <div class="itService-img-box">
+   	 	<img class="imgBox s01" src="<%=request.getContextPath()%>/resources/img/제조.jpg" style="border : 1px solid #d9d9d9;">
+   	 	<img class="imgBox s02" src="<%=request.getContextPath()%>/resources/img/DLP.png">
+   	 	<img class="imgBox s03" src="<%=request.getContextPath()%>/resources/img/DB보안.png">
+   	 	<img class="imgBox s04" src="<%=request.getContextPath()%>/resources/img/네트워크접근제어.png">
+   	 </div>
    </div>
 
 
@@ -121,27 +73,33 @@
 	    $(document).ready(function(){
 	      $('#winter').fadeIn(3000);
 	    })	
-	    var plus_btn = $('.plus-btn');
-	    var minus_btn = $('.minus-btn');
-	    var overflow_text = 'overflow-text'
-	    $(plus_btn).on("click",function(){
-	    	var con_content = $(this).parent().parent().siblings('.case-content').children('.case-content-con')
-	    	var con_title = $(this).parent().parent().siblings('.case-title').children('.case-content-con')
-	    	con_content.css('height', '85px');
-	    	con_title.css('height', '85px');
-	    	con_content.removeClass(overflow_text);
-	    	$(this).hide();
-	    	$(this).siblings('.minus-btn').show();
-	    })
-	    $(minus_btn).on("click",function(){
-	    	var con_content = $(this).parent().parent().siblings('.case-content').children('.case-content-con')
-	    	var con_title = $(this).parent().parent().siblings('.case-title').children('.case-content-con')
-	    	con_content.css('height', '');
-	    	con_title.css('height', '');
-	    	con_content.addClass(overflow_text);
-	    	$(this).hide();
-	    	$(this).siblings('.plus-btn').show();
-	    })
+	    
+		var blue = 'blue';
+	    var subMenu = $('.intro-sub-menu1');
+		var sub01 = $('.sub01');
+		var sub02 = $('.sub02');
+		var sub03 = $('.sub03');
+		var sub04 = $('.sub04');
+	    var imgBox = $('.imgBox');
+		var s01 = $('.s01');
+		var s02 = $('.s02');
+		var s03 = $('.s03');
+		var s04 = $('.s04');
+		
+		ChangeSubMenu(sub01, s01);
+		ChangeSubMenu(sub02, s02);
+		ChangeSubMenu(sub03, s03);
+		ChangeSubMenu(sub04, s04);
+		
+	    function ChangeSubMenu(active, open){
+			$(active).click(function(){
+				subMenu.removeClass(blue);
+				active.addClass(blue);
+				imgBox.css('display','none')
+				open.css('display','inline-block')
+			})
+		}	    
+	    
 	  })
 </script>
 </body>

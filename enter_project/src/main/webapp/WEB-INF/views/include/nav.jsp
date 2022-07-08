@@ -18,7 +18,7 @@
       <a href="<%=request.getContextPath()%>/company">
         <div class="sub-menu s1">기업소개</div>
       </a>
-      <a href="<%=request.getContextPath()%>/itservice">
+      <a href="<%=request.getContextPath()%>/portfolio">
         <div class="sub-menu s2">사업분야</div>
       </a>
       <a href="<%=request.getContextPath()%>/psn">
@@ -48,11 +48,14 @@
 	         </a>
 	       </div>
 	       <div class="sub-menu">
+	         <a href="<%=request.getContextPath()%>/portfolio">
+	           <div class="sub-menu-list">포트폴리오</div>
+	         </a>
 	         <a href="<%=request.getContextPath()%>/itservice">
 	           <div class="sub-menu-list">정보보안</div>
 	         </a>
 	         <a href="<%=request.getContextPath()%>/case">
-	           <div class="sub-menu-list">주요사례</div>
+	           <div class="sub-menu-list">레퍼런스</div>
 	         </a>
 	       </div>
 	       <div class="sub-menu">
@@ -100,8 +103,9 @@
         <li>
           <div class="ul2">사업분야</div>
           <ul class="res-sub-menu rs2">
+			<li><a href="<%=request.getContextPath()%>/portfolio">포트포리오</a></li>
             <li><a href="<%=request.getContextPath()%>/itservice">정보보안</a></li>
-            <li><a href="<%=request.getContextPath()%>/case">주요사례</a></li>
+            <li><a href="<%=request.getContextPath()%>/case">레퍼런스</a></li>
           </ul>
         </li>
         <li>

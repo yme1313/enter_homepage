@@ -35,12 +35,4 @@ public interface BoardService {
 
 	ArrayList<BoardVO> getCaseBoardList(Criteria cri);
 
-	void insertCaseBoard(BoardVO board, AdminVO admin, MultipartFile[] file);
-
-	void updateCaseBoard(BoardVO board, MultipartFile[] file);
-
-
-
-
-
 }

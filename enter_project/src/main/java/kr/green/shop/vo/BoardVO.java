@@ -11,7 +11,6 @@ public class BoardVO {
 	private String bd_ad_id;
 	private String bd_title;
 	private String bd_content;
-	private String bd_case;
 	private Date bd_date;
 	private String bd_valid;
 	private String bd_type;

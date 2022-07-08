@@ -92,12 +92,20 @@ a:hover{
     border-top : none;
     justify-content: space-around;
 }
-.it-submenu-box{
-	margin-left : 2%;
-}
 .intro-sub-menu{
 	border : 1px solid blue;
-	width : calc(100% / 3);
+	width : calc(100% / 5);
+	height : 50px;
+	line-height : 50x;
+	font-size : 20px;
+	cursor : pointer;
+	color : blue;
+	float : left;
+	outline : 1px solid blue;
+}
+.intro-sub-menu1{
+	border : 1px solid blue;
+	width : calc(100% / 4);
 	height : 50px;
 	line-height : 50x;
 	font-size : 20px;

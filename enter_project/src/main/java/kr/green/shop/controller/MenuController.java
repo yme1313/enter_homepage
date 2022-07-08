@@ -180,61 +180,16 @@ public class MenuController {
 		return mv;
 	}
 	@GetMapping("/case")
-	public ModelAndView getCase(ModelAndView mv, Criteria cri) {
-		cri.setBd_type("case");
-		cri.setPerPageNum(6);
-		ArrayList <BoardVO> list = boardService.getCaseBoardList(cri);
-		int totalCount = boardService.getTotalCount(cri);
-		PageMaker pm = new PageMaker(totalCount, 10, cri);
-		mv.addObject("pm",pm);
-		mv.addObject("list",list);
+	public ModelAndView getCase(ModelAndView mv) {
 		mv.setViewName("/template/menu/business/case");
 		return mv;
 	}
-	@GetMapping("/case/register")
-	public ModelAndView getCaseReister(ModelAndView mv) {
-		mv.setViewName("/template/menu/business/register");
+	@GetMapping("/portfolio")
+	public ModelAndView getPortfolio(ModelAndView mv) {
+		mv.setViewName("/template/menu/business/portfolio");
 		return mv;
 	}
-	@PostMapping("/case/register")
-	public ModelAndView postCaseReister(ModelAndView mv, BoardVO board, HttpServletRequest request, MultipartFile[] file) {
-		AdminVO admin = adminService.getAdminByRequest(request);
-		boardService.insertCaseBoard(board, admin, file);
-		mv.setViewName("redirect:/case");
-		return mv;
-	}
-	@GetMapping("/case/modify")
-	public ModelAndView getCaseModify(ModelAndView mv, Integer num, HttpServletRequest request) {
-		BoardVO board = boardService.getBoard(num);
-		mv.addObject("board", board);
-		AdminVO admin = adminService.getAdminByRequest(request);
-		if(board == null || !board.getBd_ad_id().equals(admin.getAd_id())){
-			mv.setViewName("redirect:case/");
-		}
-		FileVO fileList = boardService.getFileList(num);
-		mv.addObject("file",fileList);
-		mv.setViewName("/template/menu/business/modify");
-		return mv;
-	}
-	@PostMapping("/case/modify")
-	public ModelAndView postCaseModify(ModelAndView mv, BoardVO board, HttpServletRequest request, MultipartFile[] file) {
-		AdminVO admin = adminService.getAdminByRequest(request);
-		if(!board.getBd_ad_id().equals(admin.getAd_id())){
-			mv.setViewName("redirect:/");
-		} else {
-			boardService.updateCaseBoard(board, file);
-			mv.setViewName("redirect:/case");	
-		}
-		mv.addObject("num",board.getBd_num());	
-		return mv;
-	}
-	@GetMapping("/case/delete")
-	public ModelAndView deleteCaseGet(ModelAndView mv, Integer num, HttpServletRequest request) {
-		AdminVO admin = adminService.getAdminByRequest(request);
-		boardService.deleteItBoard(num, admin);
-		mv.setViewName("redirect:/case");
-		return mv;
-	}
+
 	//기업소개
 	@GetMapping("/company")
 	public ModelAndView getCompany(ModelAndView mv) {

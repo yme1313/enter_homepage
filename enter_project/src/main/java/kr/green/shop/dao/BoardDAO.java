@@ -32,10 +32,5 @@ public interface BoardDAO {
 
 	ArrayList<BoardVO> getCaseBoardList(Criteria cri);
 
-	void insertCaseBoard(BoardVO board);
-
-	void uodateCaseBoard(@Param("dbBoard")BoardVO board);
-
-
 
 }
